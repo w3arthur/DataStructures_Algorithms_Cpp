@@ -2,7 +2,7 @@
 
 #include <iostream>
 #include "Graph.cpp"
-using  std::cout, std::endl;
+using  std::cout, std::boolalpha, std::endl;
 int main() {
 
     cout << "Graph\n";   //retrieval
@@ -19,8 +19,8 @@ int main() {
     graph.addEdge('a', 'b');
     graph.addEdge('b', 'c');
     graph.addEdge('a', 'd');
-    graph.addEdge('c', 'a');
-    cout << graph.hasCycle() << "\n";
+  //  graph.addEdge('c', 'a');
+    cout << boolalpha << graph.hasCycle() << "\n";
 
 
 

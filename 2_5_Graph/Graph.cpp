@@ -7,7 +7,7 @@
 #include <stack>
 #include <queue>
 #include <memory>
-
+#include <iterator>
 using std::string, std::to_string, std::cout, std::map, std::pair, std::set;
 using std::stack, std::queue, std::list, std::shared_ptr, std::make_shared, std::exception;
 
@@ -78,7 +78,7 @@ public:
         auto it = nodes.find(label);
         if ( it == nodes.end()) return;
         nodes.erase(label);
-        edges.erase(it->second);
+        edges.erase( it->second );
     }
 
     void addEdge(char from, char to)

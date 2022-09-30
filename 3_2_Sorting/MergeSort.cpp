@@ -34,8 +34,8 @@ static void mergeSort(int*& array, const int& arrayLength)
 
 static void merge(int*& array, struct Array& left, struct Array& right )
 {
-    auto [rightArray, rightLength] {right};
-    auto [leftArray, leftLength] {left};
+    auto& [rightArray, rightLength] {right};
+    auto& [leftArray, leftLength] {left};
     int l{0}, r{0}, arr{0};
     while (l < leftLength && r < rightLength)
     {
@@ -79,7 +79,8 @@ static void merge2(int array[], int arrayStart, int middle, int arrayLength)
 {
     int leftLength = middle - arrayStart + 1;
     int rightLength = arrayLength - middle;
-    int leftArray[leftLength], rightArray[rightLength];
+    int* leftArray = new int[leftLength];
+    int* rightArray = new int[rightLength];
     for (int i{}; i < leftLength; i++) leftArray[i] = array[arrayStart + i];
     for (int i{}; i < rightLength; i++) rightArray[i] = array[middle + 1 + i];
     int arr{0}, l{0}, r{arrayStart};
@@ -90,4 +91,6 @@ static void merge2(int array[], int arrayStart, int middle, int arrayLength)
     }
     while (arr < leftLength) array[r++] = leftArray[arr++];
     while (l < rightLength) array[r++] = rightArray[l++];
+    delete[] leftArray;
+    delete[] rightArray;
 }

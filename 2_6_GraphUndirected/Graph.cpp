@@ -59,9 +59,9 @@ private:
     typedef std::shared_ptr<struct Node> sp_Node;
     typedef std::shared_ptr<struct Edge> sp_Edge;
     typedef shared_ptr<struct NodePriority> sp_NodePriority;
-    typedef std::_Rb_tree_const_iterator<pair<const char, sp_Node>> it_Node;
+    //typedef std::_Rb_tree_const_iterator<pair<const char, sp_Node>> it_Node;
     map<char, sp_Node> nodes;
-    [[nodiscard]] bool isNull(const it_Node& itNode) const { return itNode == nodes.end(); }
+    bool isNull(std::_Rb_tree_const_iterator<pair<const char, sp_Node>> itNode) { return itNode == nodes.end(); }
     static list<char> buildPath(map<sp_Node, sp_Node>& previousNodes, const sp_Node& toNode) {
         stack<sp_Node> stack{};
         stack.push(toNode);
@@ -95,7 +95,7 @@ private:
         }
         return false;
     }
-    [[nodiscard]] bool containsNode(const sp_Node& node) const { return !isNull(nodes.find(node->label)); }
+    bool containsNode(const sp_Node& node) const { return !isNull(nodes.find(node->label)); }
 
 
 public:

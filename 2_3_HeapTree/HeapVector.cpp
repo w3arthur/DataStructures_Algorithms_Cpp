@@ -57,7 +57,7 @@ public:
     {
         if (_size >= vector.size()) vector.push_back(value);
         _size ++;
-        vector.push_back(value);   //[_size] = 
+        vector[_size] = value;   //
 
         shiftUp(_size);
     }
