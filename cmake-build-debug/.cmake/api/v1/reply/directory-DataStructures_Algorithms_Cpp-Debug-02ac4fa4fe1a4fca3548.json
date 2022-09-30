@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "DataStructures_Algorithms_Cpp",
+		"source" : "DataStructures_Algorithms_Cpp"
+	}
+}

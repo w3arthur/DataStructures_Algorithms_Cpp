@@ -1,0 +1,101 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "DataStructures_Algorithms_Cpp",
+					"jsonFile" : "directory-DataStructures_Algorithms_Cpp-Debug-02ac4fa4fe1a4fca3548.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "DataStructures_Algorithms_Cpp",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "Folder2",
+					"jsonFile" : "directory-Folder2-Debug-f4e040e2b164003d1031.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Folder2",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "DataStructures_Algorithms_Cpp",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "DataStructures_Algorithms_Cpp::@d5c4a602708b76fddf09",
+					"jsonFile" : "target-DataStructures_Algorithms_Cpp-Debug-6bd01bd250f12213331d.json",
+					"name" : "DataStructures_Algorithms_Cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "Folder2::@9e28fc05ce8806f328c8",
+					"jsonFile" : "target-Folder2-Debug-b14e43f196dae11f1b08.json",
+					"name" : "Folder2",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/out/build/x64-debug",
+		"source" : "C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
