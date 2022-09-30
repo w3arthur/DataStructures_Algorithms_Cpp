@@ -26,12 +26,13 @@ int main() {
     heap2.insert(10);
     heap2.insert(5);
     heap2.insert(2);
-    cout << heap2.print() << endl;
+
     //to fix !!!! remove() and shiftDown
-    cout <<  heap2.extractMax() << endl;
-    cout <<  heap2.extractMax() << endl;    //WRONG !!!
+   // cout <<  heap2.extractMax() << endl;
+  //  cout <<  heap2.extractMax() << endl;    //WRONG !!!
 
     cout << heap2.print() << endl;
+
     return EXIT_SUCCESS;
 
 }

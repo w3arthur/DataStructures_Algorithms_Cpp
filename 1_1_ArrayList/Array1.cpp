@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-using std::string, std::to_string, std::cout, std::exception;
+using std::string, std::to_string, std::cout,std::exception;
 class Array1
 {
 private:

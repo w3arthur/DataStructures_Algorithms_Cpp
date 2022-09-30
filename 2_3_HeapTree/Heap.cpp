@@ -13,7 +13,7 @@ private:
     int count;
     int* itemArray;
     int arrayLength;
-    void swap(int& a, int b) const { swap(itemArray[a], itemArray[b]); }
+    void swap(const int& a, const int b) const { std::swap(itemArray[a], itemArray[b]); }
     static int parent(int& index) {return index / 2;} // index/2
     static int child(int& index) {return index * 2;} // index*2
     static int left(int& index) { return  child(index) + 1; } // index*2+1

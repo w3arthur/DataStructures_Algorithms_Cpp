@@ -6,15 +6,15 @@ class Array2
 {
 private:
     T* itemArray;
-    int arrayLength{};
-    int count{}; //count
+    int arrayLength;
+    int count; //count
     void resize();
     [[nodiscard]] bool needToReSize() const;
 
     [[maybe_unused]] bool needToReSize(int& index) const;
 public:
     explicit Array2(int length);
-    Array2();
+   // Array2();
     ~Array2(){ delete[](itemArray); };
 
     [[maybe_unused]] bool contains(T item) const;
@@ -47,7 +47,7 @@ template<typename  T> bool Array2<T>::needToReSize() const { return arrayLength 
 template<typename T> [[maybe_unused]] bool Array2<T>::needToReSize(int& index) const { return index >= count; }
 //public
 template<typename T> inline Array2<T>::Array2(int length) : count{}, arrayLength{length}, itemArray {new T[arrayLength]} { }
-template<typename T> inline Array2<T>::Array2() { Array2(5); }
+//template<typename T> inline Array2<T>::Array2() { Array2(5); }
 template<typename T> [[maybe_unused]] bool Array2<T>::contains(T item) const { return indexOf(item) != -1; }
 template<typename T> int Array2<T>::indexOf(T& item) const { for (int i = 0; i < count; ++i) if (itemArray[i] == item) return i; return -1; }
 template<typename T>

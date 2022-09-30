@@ -14,8 +14,8 @@ public:
         return m_Data[index];
     }
     const T& operator[](size_t index) const { return m_Data[index]; } // call reference allow
-    [[maybe_unused]] T* Data()  { return m_Data;  }
-    [[maybe_unused]] const T* Data() const { return m_Data; }
+    T* Data()  { return m_Data;  }
+    const T* Data() const { return m_Data; }
     //for(auto& a : array3 ) to complete if Iterator
     //fill
     //swap
