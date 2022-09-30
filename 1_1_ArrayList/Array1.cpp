@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include <string>
 using std::string, std::to_string, std::cout,std::exception;
 class Array1
 {
@@ -18,7 +19,7 @@ private:
     [[nodiscard]] bool needToReSize() const { return arrayLength == count; };
     [[nodiscard]] bool needToReSize(int index) const { return index >= count; };
 public:
-    explicit Array1(int length) : count{}, arrayLength{length}, itemArray{new int[arrayLength]}  { }
+    explicit Array1(int length) : count{}, arrayLength{length}, itemArray{new int[length]}  { }
     Array1() { Array1(5); }
     [[nodiscard]] bool contains(int item) const { return indexOf(item) != -1; };
     int indexOf(int& item) const {

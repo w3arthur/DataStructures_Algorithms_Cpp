@@ -20,7 +20,7 @@ static int binarySearch(int*& array, const int& arrayLength, const int& target)
 static int binarySearch_Recursion(int*& array, const int& target, int left, int right);
 static int binarySearch_Recursion(int*& array, const int& arrayLength, const int& target)
 {
-    binarySearch_Recursion(array, target, 0, arrayLength-1);
+    return binarySearch_Recursion(array, target, 0, arrayLength-1);
 }
 static int binarySearch_Recursion(int*& array, const int& target, int left, int right)
 {

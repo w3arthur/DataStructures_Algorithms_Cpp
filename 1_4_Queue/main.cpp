@@ -2,8 +2,8 @@
 #include <iostream>
 #include <queue>
 #include <stack>
-#import "QueueArray.cpp"
-#import "QueueStack.cpp"
+#include "QueueArray.cpp"
+#include "QueueStack.cpp"
 using std::cout, std::endl, std::queue, std::stack;
 static void reverse(std::queue<int> &queue);
 int main()

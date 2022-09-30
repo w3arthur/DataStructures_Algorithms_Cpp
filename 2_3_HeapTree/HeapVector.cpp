@@ -53,11 +53,11 @@ public:
     ~HeapVector() = default;
     [[maybe_unused]] [[nodiscard]] bool isEmpty() const { return _size == 0; }
     [[maybe_unused]] [[nodiscard]] int getMax() const { return vector[0]; }
-    void insert(const int& value)
+    void insert(int value)
     {
         if (_size >= vector.size()) vector.push_back(value);
         _size ++;
-        vector[_size] = value;
+        vector.push_back(value);   //[_size] = 
 
         shiftUp(_size);
     }

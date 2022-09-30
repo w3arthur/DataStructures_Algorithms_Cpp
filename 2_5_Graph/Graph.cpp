@@ -22,11 +22,11 @@ private:
     };
 
     typedef shared_ptr<struct Node> sp_Node;
-    typedef std::_Rb_tree_iterator<pair<const char, sp_Node>> it_Node;
+    //typedef std::_Rb_tree_iterator<pair<const char, sp_Node>> it_Node;
 
     map<char, sp_Node> nodes;
     map<sp_Node, list<sp_Node>> edges;
-    bool isNull(it_Node itNode) { return itNode == nodes.end();}
+    bool isNull(auto itnode) { return itnode == nodes.end();}
     void traverseDepthFirst_recursion(sp_Node& node, set<sp_Node>& visited)
     {
         cout << node->print() << " ";

@@ -61,7 +61,7 @@ private:
     }
 
 public:
-    explicit Heap() : arrayLength{20}, itemArray{new int[arrayLength]}, count{} {}
+    explicit Heap() : arrayLength{20}, itemArray{new int[20]}, count{} {}
     ~Heap() { delete[](itemArray); }
     [[nodiscard]] bool isFull() const { return count == arrayLength; }
     [[nodiscard]] bool isEmpty() const { return count == 0; }

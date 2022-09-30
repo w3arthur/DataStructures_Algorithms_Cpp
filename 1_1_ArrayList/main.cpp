@@ -24,23 +24,23 @@ int main()
     cout << endl;
 
 
-    cout << "Array2" << endl;
-    Array2<int> array2( 5 );
-    array2.add(5);
-    array2.add(2);
-    array2.add(1);
-    array2.add(3);
-    array2.add(7);
-    array2.add(3);
-    array2.add(7);
+    //cout << "Array2" << endl;
+    //Array2<int> array2( 5 );
+    //array2.add(5);
+    //array2.add(2);
+    //array2.add(1);
+    //array2.add(3);
+    //array2.add(7);
+    //array2.add(3);
+    //array2.add(7);
 
-    cout << boolalpha << array2.contains(5) << endl;
-    array2.print();
-    array2.remove(2);
-    array2.print();
-    cout << endl;
+    //cout << boolalpha << array2.contains(5) << endl;
+    //array2.print();
+    //array2.remove(2);
+    //array2.print();
+    //cout << endl;
 
-    std::array<int, 5> array{};
+    //std::array<int, 5> array{};
 //    for (int i = 0; i < array.size(); ++i) {
 //    	cout << array[i] << endl;
 //    }
