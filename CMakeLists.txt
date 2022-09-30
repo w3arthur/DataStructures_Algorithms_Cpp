@@ -5,6 +5,7 @@ cmake_minimum_required (VERSION 3.8)
 
 project ("CMakeExample")
 
+
 # Include sub-projects.
 add_subdirectory ("CMakeExample")
 add_subdirectory ("1_1_ArrayList")
