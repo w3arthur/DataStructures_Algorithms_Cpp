@@ -5,6 +5,7 @@
 #Cmake
 out/
 cmake-build-debug/
+.idea/
 
 # Prerequisites
 *.d
