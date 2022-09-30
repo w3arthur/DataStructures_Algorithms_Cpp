@@ -34,8 +34,21 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/out/build/x64-debug/DataStructures_Algorithms_Cpp/cmake_install.cmake")
-  include("C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/out/build/x64-debug/Folder2/cmake_install.cmake")
+  include("C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/out/build/x64-debug/CMakeExample/cmake_install.cmake")
+  include("C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/out/build/x64-debug/1_1_ArrayList/cmake_install.cmake")
+  include("C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/out/build/x64-debug/1_2_LinkedList/cmake_install.cmake")
+  include("C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/out/build/x64-debug/1_3_Stack/cmake_install.cmake")
+  include("C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/out/build/x64-debug/1_4_Queue/cmake_install.cmake")
+  include("C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/out/build/x64-debug/1_5_Hashtable/cmake_install.cmake")
+  include("C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/out/build/x64-debug/2_1_BinaryTree/cmake_install.cmake")
+  include("C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/out/build/x64-debug/2_2_AVLTree/cmake_install.cmake")
+  include("C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/out/build/x64-debug/2_3_HeapTree/cmake_install.cmake")
+  include("C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/out/build/x64-debug/2_4_TrieTree/cmake_install.cmake")
+  include("C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/out/build/x64-debug/2_5_Graph/cmake_install.cmake")
+  include("C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/out/build/x64-debug/2_6_GraphUndirected/cmake_install.cmake")
+  include("C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/out/build/x64-debug/3_1_Searching/cmake_install.cmake")
+  include("C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/out/build/x64-debug/3_2_Sorting/cmake_install.cmake")
+  include("C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/out/build/x64-debug/3_3_String/cmake_install.cmake")
 
 endif()
 

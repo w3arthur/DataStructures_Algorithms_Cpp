@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: DataStructures_Algorithms_Cpp
+# Project: CMakeExample
 # Configurations: Debug
 # =============================================================================
 
@@ -69,60 +69,60 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 # =============================================================================
-# Object build statements for EXECUTABLE target DataStructures_Algorithms_Cpp
+# Object build statements for EXECUTABLE target CMakeExample
 
 
 #############################################
-# Order-only phony target for DataStructures_Algorithms_Cpp
+# Order-only phony target for CMakeExample
 
-build cmake_object_order_depends_target_DataStructures_Algorithms_Cpp: phony || DataStructures_Algorithms_Cpp/CMakeFiles/DataStructures_Algorithms_Cpp.dir
+build cmake_object_order_depends_target_CMakeExample: phony || CMakeExample/CMakeFiles/CMakeExample.dir
 
-build DataStructures_Algorithms_Cpp/CMakeFiles/DataStructures_Algorithms_Cpp.dir/DataStructures_Algorithms_Cpp.cpp.obj: CXX_COMPILER__DataStructures_Algorithms_Cpp_Debug C$:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/DataStructures_Algorithms_Cpp/DataStructures_Algorithms_Cpp.cpp || cmake_object_order_depends_target_DataStructures_Algorithms_Cpp
-  DEP_FILE = DataStructures_Algorithms_Cpp\CMakeFiles\DataStructures_Algorithms_Cpp.dir\DataStructures_Algorithms_Cpp.cpp.obj.d
+build CMakeExample/CMakeFiles/CMakeExample.dir/CmakeExample.cpp.obj: CXX_COMPILER__CMakeExample_Debug C$:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/CMakeExample/CmakeExample.cpp || cmake_object_order_depends_target_CMakeExample
+  DEP_FILE = CMakeExample\CMakeFiles\CMakeExample.dir\CmakeExample.cpp.obj.d
   FLAGS = -g -std=gnu++20
-  OBJECT_DIR = DataStructures_Algorithms_Cpp\CMakeFiles\DataStructures_Algorithms_Cpp.dir
-  OBJECT_FILE_DIR = DataStructures_Algorithms_Cpp\CMakeFiles\DataStructures_Algorithms_Cpp.dir
+  OBJECT_DIR = CMakeExample\CMakeFiles\CMakeExample.dir
+  OBJECT_FILE_DIR = CMakeExample\CMakeFiles\CMakeExample.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target DataStructures_Algorithms_Cpp
+# Link build statements for EXECUTABLE target CMakeExample
 
 
 #############################################
-# Link the executable DataStructures_Algorithms_Cpp\DataStructures_Algorithms_Cpp.exe
+# Link the executable CMakeExample\CMakeExample.exe
 
-build DataStructures_Algorithms_Cpp/DataStructures_Algorithms_Cpp.exe: CXX_EXECUTABLE_LINKER__DataStructures_Algorithms_Cpp_Debug DataStructures_Algorithms_Cpp/CMakeFiles/DataStructures_Algorithms_Cpp.dir/DataStructures_Algorithms_Cpp.cpp.obj
+build CMakeExample/CMakeExample.exe: CXX_EXECUTABLE_LINKER__CMakeExample_Debug CMakeExample/CMakeFiles/CMakeExample.dir/CmakeExample.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = DataStructures_Algorithms_Cpp\CMakeFiles\DataStructures_Algorithms_Cpp.dir
+  OBJECT_DIR = CMakeExample\CMakeFiles\CMakeExample.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = DataStructures_Algorithms_Cpp\DataStructures_Algorithms_Cpp.exe
-  TARGET_IMPLIB = DataStructures_Algorithms_Cpp\libDataStructures_Algorithms_Cpp.dll.a
-  TARGET_PDB = DataStructures_Algorithms_Cpp.exe.dbg
+  TARGET_FILE = CMakeExample\CMakeExample.exe
+  TARGET_IMPLIB = CMakeExample\libCMakeExample.dll.a
+  TARGET_PDB = CMakeExample.exe.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
-build DataStructures_Algorithms_Cpp/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug\DataStructures_Algorithms_Cpp && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+build CMakeExample/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug\CMakeExample && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build DataStructures_Algorithms_Cpp/edit_cache: phony DataStructures_Algorithms_Cpp/CMakeFiles/edit_cache.util
+build CMakeExample/edit_cache: phony CMakeExample/CMakeFiles/edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build DataStructures_Algorithms_Cpp/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug\DataStructures_Algorithms_Cpp && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp -BC:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug"
+build CMakeExample/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug\CMakeExample && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp -BC:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build DataStructures_Algorithms_Cpp/rebuild_cache: phony DataStructures_Algorithms_Cpp/CMakeFiles/rebuild_cache.util
+build CMakeExample/rebuild_cache: phony CMakeExample/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -130,71 +130,916 @@ build DataStructures_Algorithms_Cpp/rebuild_cache: phony DataStructures_Algorith
 # =============================================================================
 
 # =============================================================================
-# Object build statements for EXECUTABLE target Folder2
+# Object build statements for EXECUTABLE target 1_1_ArrayList
 
 
 #############################################
-# Order-only phony target for Folder2
+# Order-only phony target for 1_1_ArrayList
 
-build cmake_object_order_depends_target_Folder2: phony || Folder2/CMakeFiles/Folder2.dir
+build cmake_object_order_depends_target_1_1_ArrayList: phony || 1_1_ArrayList/CMakeFiles/1_1_ArrayList.dir
 
-build Folder2/CMakeFiles/Folder2.dir/Main2.cpp.obj: CXX_COMPILER__Folder2_Debug C$:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/Folder2/Main2.cpp || cmake_object_order_depends_target_Folder2
-  DEP_FILE = Folder2\CMakeFiles\Folder2.dir\Main2.cpp.obj.d
+build 1_1_ArrayList/CMakeFiles/1_1_ArrayList.dir/main.cpp.obj: CXX_COMPILER__1_1_ArrayList_Debug C$:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/1_1_ArrayList/main.cpp || cmake_object_order_depends_target_1_1_ArrayList
+  DEP_FILE = 1_1_ArrayList\CMakeFiles\1_1_ArrayList.dir\main.cpp.obj.d
   FLAGS = -g -std=gnu++20
-  OBJECT_DIR = Folder2\CMakeFiles\Folder2.dir
-  OBJECT_FILE_DIR = Folder2\CMakeFiles\Folder2.dir
+  OBJECT_DIR = 1_1_ArrayList\CMakeFiles\1_1_ArrayList.dir
+  OBJECT_FILE_DIR = 1_1_ArrayList\CMakeFiles\1_1_ArrayList.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target Folder2
+# Link build statements for EXECUTABLE target 1_1_ArrayList
 
 
 #############################################
-# Link the executable Folder2\Folder2.exe
+# Link the executable 1_1_ArrayList\1_1_ArrayList.exe
 
-build Folder2/Folder2.exe: CXX_EXECUTABLE_LINKER__Folder2_Debug Folder2/CMakeFiles/Folder2.dir/Main2.cpp.obj
+build 1_1_ArrayList/1_1_ArrayList.exe: CXX_EXECUTABLE_LINKER__1_1_ArrayList_Debug 1_1_ArrayList/CMakeFiles/1_1_ArrayList.dir/main.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = Folder2\CMakeFiles\Folder2.dir
+  OBJECT_DIR = 1_1_ArrayList\CMakeFiles\1_1_ArrayList.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = Folder2\Folder2.exe
-  TARGET_IMPLIB = Folder2\libFolder2.dll.a
-  TARGET_PDB = Folder2.exe.dbg
+  TARGET_FILE = 1_1_ArrayList\1_1_ArrayList.exe
+  TARGET_IMPLIB = 1_1_ArrayList\lib1_1_ArrayList.dll.a
+  TARGET_PDB = 1_1_ArrayList.exe.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
-build Folder2/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug\Folder2 && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+build 1_1_ArrayList/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug\1_1_ArrayList && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build Folder2/edit_cache: phony Folder2/CMakeFiles/edit_cache.util
+build 1_1_ArrayList/edit_cache: phony 1_1_ArrayList/CMakeFiles/edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build Folder2/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug\Folder2 && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp -BC:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug"
+build 1_1_ArrayList/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug\1_1_ArrayList && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp -BC:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build Folder2/rebuild_cache: phony Folder2/CMakeFiles/rebuild_cache.util
+build 1_1_ArrayList/rebuild_cache: phony 1_1_ArrayList/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 1_2_LinkedList
+
+
+#############################################
+# Order-only phony target for 1_2_LinkedList
+
+build cmake_object_order_depends_target_1_2_LinkedList: phony || 1_2_LinkedList/CMakeFiles/1_2_LinkedList.dir
+
+build 1_2_LinkedList/CMakeFiles/1_2_LinkedList.dir/main.cpp.obj: CXX_COMPILER__1_2_LinkedList_Debug C$:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/1_2_LinkedList/main.cpp || cmake_object_order_depends_target_1_2_LinkedList
+  DEP_FILE = 1_2_LinkedList\CMakeFiles\1_2_LinkedList.dir\main.cpp.obj.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = 1_2_LinkedList\CMakeFiles\1_2_LinkedList.dir
+  OBJECT_FILE_DIR = 1_2_LinkedList\CMakeFiles\1_2_LinkedList.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 1_2_LinkedList
+
+
+#############################################
+# Link the executable 1_2_LinkedList\1_2_LinkedList.exe
+
+build 1_2_LinkedList/1_2_LinkedList.exe: CXX_EXECUTABLE_LINKER__1_2_LinkedList_Debug 1_2_LinkedList/CMakeFiles/1_2_LinkedList.dir/main.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = 1_2_LinkedList\CMakeFiles\1_2_LinkedList.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 1_2_LinkedList\1_2_LinkedList.exe
+  TARGET_IMPLIB = 1_2_LinkedList\lib1_2_LinkedList.dll.a
+  TARGET_PDB = 1_2_LinkedList.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build 1_2_LinkedList/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug\1_2_LinkedList && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build 1_2_LinkedList/edit_cache: phony 1_2_LinkedList/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build 1_2_LinkedList/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug\1_2_LinkedList && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp -BC:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build 1_2_LinkedList/rebuild_cache: phony 1_2_LinkedList/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 1_3_Stack
+
+
+#############################################
+# Order-only phony target for 1_3_Stack
+
+build cmake_object_order_depends_target_1_3_Stack: phony || 1_3_Stack/CMakeFiles/1_3_Stack.dir
+
+build 1_3_Stack/CMakeFiles/1_3_Stack.dir/main.cpp.obj: CXX_COMPILER__1_3_Stack_Debug C$:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/1_3_Stack/main.cpp || cmake_object_order_depends_target_1_3_Stack
+  DEP_FILE = 1_3_Stack\CMakeFiles\1_3_Stack.dir\main.cpp.obj.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = 1_3_Stack\CMakeFiles\1_3_Stack.dir
+  OBJECT_FILE_DIR = 1_3_Stack\CMakeFiles\1_3_Stack.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 1_3_Stack
+
+
+#############################################
+# Link the executable 1_3_Stack\1_3_Stack.exe
+
+build 1_3_Stack/1_3_Stack.exe: CXX_EXECUTABLE_LINKER__1_3_Stack_Debug 1_3_Stack/CMakeFiles/1_3_Stack.dir/main.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = 1_3_Stack\CMakeFiles\1_3_Stack.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 1_3_Stack\1_3_Stack.exe
+  TARGET_IMPLIB = 1_3_Stack\lib1_3_Stack.dll.a
+  TARGET_PDB = 1_3_Stack.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build 1_3_Stack/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug\1_3_Stack && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build 1_3_Stack/edit_cache: phony 1_3_Stack/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build 1_3_Stack/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug\1_3_Stack && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp -BC:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build 1_3_Stack/rebuild_cache: phony 1_3_Stack/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 1_4_Queue
+
+
+#############################################
+# Order-only phony target for 1_4_Queue
+
+build cmake_object_order_depends_target_1_4_Queue: phony || 1_4_Queue/CMakeFiles/1_4_Queue.dir
+
+build 1_4_Queue/CMakeFiles/1_4_Queue.dir/main.cpp.obj: CXX_COMPILER__1_4_Queue_Debug C$:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/1_4_Queue/main.cpp || cmake_object_order_depends_target_1_4_Queue
+  DEP_FILE = 1_4_Queue\CMakeFiles\1_4_Queue.dir\main.cpp.obj.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = 1_4_Queue\CMakeFiles\1_4_Queue.dir
+  OBJECT_FILE_DIR = 1_4_Queue\CMakeFiles\1_4_Queue.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 1_4_Queue
+
+
+#############################################
+# Link the executable 1_4_Queue\1_4_Queue.exe
+
+build 1_4_Queue/1_4_Queue.exe: CXX_EXECUTABLE_LINKER__1_4_Queue_Debug 1_4_Queue/CMakeFiles/1_4_Queue.dir/main.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = 1_4_Queue\CMakeFiles\1_4_Queue.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 1_4_Queue\1_4_Queue.exe
+  TARGET_IMPLIB = 1_4_Queue\lib1_4_Queue.dll.a
+  TARGET_PDB = 1_4_Queue.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build 1_4_Queue/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug\1_4_Queue && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build 1_4_Queue/edit_cache: phony 1_4_Queue/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build 1_4_Queue/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug\1_4_Queue && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp -BC:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build 1_4_Queue/rebuild_cache: phony 1_4_Queue/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 1_5_Hashtable
+
+
+#############################################
+# Order-only phony target for 1_5_Hashtable
+
+build cmake_object_order_depends_target_1_5_Hashtable: phony || 1_5_Hashtable/CMakeFiles/1_5_Hashtable.dir
+
+build 1_5_Hashtable/CMakeFiles/1_5_Hashtable.dir/main.cpp.obj: CXX_COMPILER__1_5_Hashtable_Debug C$:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/1_5_Hashtable/main.cpp || cmake_object_order_depends_target_1_5_Hashtable
+  DEP_FILE = 1_5_Hashtable\CMakeFiles\1_5_Hashtable.dir\main.cpp.obj.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = 1_5_Hashtable\CMakeFiles\1_5_Hashtable.dir
+  OBJECT_FILE_DIR = 1_5_Hashtable\CMakeFiles\1_5_Hashtable.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 1_5_Hashtable
+
+
+#############################################
+# Link the executable 1_5_Hashtable\1_5_Hashtable.exe
+
+build 1_5_Hashtable/1_5_Hashtable.exe: CXX_EXECUTABLE_LINKER__1_5_Hashtable_Debug 1_5_Hashtable/CMakeFiles/1_5_Hashtable.dir/main.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = 1_5_Hashtable\CMakeFiles\1_5_Hashtable.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 1_5_Hashtable\1_5_Hashtable.exe
+  TARGET_IMPLIB = 1_5_Hashtable\lib1_5_Hashtable.dll.a
+  TARGET_PDB = 1_5_Hashtable.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build 1_5_Hashtable/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug\1_5_Hashtable && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build 1_5_Hashtable/edit_cache: phony 1_5_Hashtable/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build 1_5_Hashtable/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug\1_5_Hashtable && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp -BC:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build 1_5_Hashtable/rebuild_cache: phony 1_5_Hashtable/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 2_1_BinaryTree
+
+
+#############################################
+# Order-only phony target for 2_1_BinaryTree
+
+build cmake_object_order_depends_target_2_1_BinaryTree: phony || 2_1_BinaryTree/CMakeFiles/2_1_BinaryTree.dir
+
+build 2_1_BinaryTree/CMakeFiles/2_1_BinaryTree.dir/main.cpp.obj: CXX_COMPILER__2_1_BinaryTree_Debug C$:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/2_1_BinaryTree/main.cpp || cmake_object_order_depends_target_2_1_BinaryTree
+  DEP_FILE = 2_1_BinaryTree\CMakeFiles\2_1_BinaryTree.dir\main.cpp.obj.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = 2_1_BinaryTree\CMakeFiles\2_1_BinaryTree.dir
+  OBJECT_FILE_DIR = 2_1_BinaryTree\CMakeFiles\2_1_BinaryTree.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 2_1_BinaryTree
+
+
+#############################################
+# Link the executable 2_1_BinaryTree\2_1_BinaryTree.exe
+
+build 2_1_BinaryTree/2_1_BinaryTree.exe: CXX_EXECUTABLE_LINKER__2_1_BinaryTree_Debug 2_1_BinaryTree/CMakeFiles/2_1_BinaryTree.dir/main.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = 2_1_BinaryTree\CMakeFiles\2_1_BinaryTree.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 2_1_BinaryTree\2_1_BinaryTree.exe
+  TARGET_IMPLIB = 2_1_BinaryTree\lib2_1_BinaryTree.dll.a
+  TARGET_PDB = 2_1_BinaryTree.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build 2_1_BinaryTree/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug\2_1_BinaryTree && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build 2_1_BinaryTree/edit_cache: phony 2_1_BinaryTree/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build 2_1_BinaryTree/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug\2_1_BinaryTree && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp -BC:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build 2_1_BinaryTree/rebuild_cache: phony 2_1_BinaryTree/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 2_2_AVLTree
+
+
+#############################################
+# Order-only phony target for 2_2_AVLTree
+
+build cmake_object_order_depends_target_2_2_AVLTree: phony || 2_2_AVLTree/CMakeFiles/2_2_AVLTree.dir
+
+build 2_2_AVLTree/CMakeFiles/2_2_AVLTree.dir/main.cpp.obj: CXX_COMPILER__2_2_AVLTree_Debug C$:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/2_2_AVLTree/main.cpp || cmake_object_order_depends_target_2_2_AVLTree
+  DEP_FILE = 2_2_AVLTree\CMakeFiles\2_2_AVLTree.dir\main.cpp.obj.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = 2_2_AVLTree\CMakeFiles\2_2_AVLTree.dir
+  OBJECT_FILE_DIR = 2_2_AVLTree\CMakeFiles\2_2_AVLTree.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 2_2_AVLTree
+
+
+#############################################
+# Link the executable 2_2_AVLTree\2_2_AVLTree.exe
+
+build 2_2_AVLTree/2_2_AVLTree.exe: CXX_EXECUTABLE_LINKER__2_2_AVLTree_Debug 2_2_AVLTree/CMakeFiles/2_2_AVLTree.dir/main.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = 2_2_AVLTree\CMakeFiles\2_2_AVLTree.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 2_2_AVLTree\2_2_AVLTree.exe
+  TARGET_IMPLIB = 2_2_AVLTree\lib2_2_AVLTree.dll.a
+  TARGET_PDB = 2_2_AVLTree.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build 2_2_AVLTree/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug\2_2_AVLTree && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build 2_2_AVLTree/edit_cache: phony 2_2_AVLTree/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build 2_2_AVLTree/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug\2_2_AVLTree && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp -BC:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build 2_2_AVLTree/rebuild_cache: phony 2_2_AVLTree/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 2_3_HeapTree
+
+
+#############################################
+# Order-only phony target for 2_3_HeapTree
+
+build cmake_object_order_depends_target_2_3_HeapTree: phony || 2_3_HeapTree/CMakeFiles/2_3_HeapTree.dir
+
+build 2_3_HeapTree/CMakeFiles/2_3_HeapTree.dir/main.cpp.obj: CXX_COMPILER__2_3_HeapTree_Debug C$:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/2_3_HeapTree/main.cpp || cmake_object_order_depends_target_2_3_HeapTree
+  DEP_FILE = 2_3_HeapTree\CMakeFiles\2_3_HeapTree.dir\main.cpp.obj.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = 2_3_HeapTree\CMakeFiles\2_3_HeapTree.dir
+  OBJECT_FILE_DIR = 2_3_HeapTree\CMakeFiles\2_3_HeapTree.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 2_3_HeapTree
+
+
+#############################################
+# Link the executable 2_3_HeapTree\2_3_HeapTree.exe
+
+build 2_3_HeapTree/2_3_HeapTree.exe: CXX_EXECUTABLE_LINKER__2_3_HeapTree_Debug 2_3_HeapTree/CMakeFiles/2_3_HeapTree.dir/main.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = 2_3_HeapTree\CMakeFiles\2_3_HeapTree.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 2_3_HeapTree\2_3_HeapTree.exe
+  TARGET_IMPLIB = 2_3_HeapTree\lib2_3_HeapTree.dll.a
+  TARGET_PDB = 2_3_HeapTree.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build 2_3_HeapTree/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug\2_3_HeapTree && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build 2_3_HeapTree/edit_cache: phony 2_3_HeapTree/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build 2_3_HeapTree/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug\2_3_HeapTree && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp -BC:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build 2_3_HeapTree/rebuild_cache: phony 2_3_HeapTree/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 2_4_TrieTree
+
+
+#############################################
+# Order-only phony target for 2_4_TrieTree
+
+build cmake_object_order_depends_target_2_4_TrieTree: phony || 2_4_TrieTree/CMakeFiles/2_4_TrieTree.dir
+
+build 2_4_TrieTree/CMakeFiles/2_4_TrieTree.dir/main.cpp.obj: CXX_COMPILER__2_4_TrieTree_Debug C$:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/2_4_TrieTree/main.cpp || cmake_object_order_depends_target_2_4_TrieTree
+  DEP_FILE = 2_4_TrieTree\CMakeFiles\2_4_TrieTree.dir\main.cpp.obj.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = 2_4_TrieTree\CMakeFiles\2_4_TrieTree.dir
+  OBJECT_FILE_DIR = 2_4_TrieTree\CMakeFiles\2_4_TrieTree.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 2_4_TrieTree
+
+
+#############################################
+# Link the executable 2_4_TrieTree\2_4_TrieTree.exe
+
+build 2_4_TrieTree/2_4_TrieTree.exe: CXX_EXECUTABLE_LINKER__2_4_TrieTree_Debug 2_4_TrieTree/CMakeFiles/2_4_TrieTree.dir/main.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = 2_4_TrieTree\CMakeFiles\2_4_TrieTree.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 2_4_TrieTree\2_4_TrieTree.exe
+  TARGET_IMPLIB = 2_4_TrieTree\lib2_4_TrieTree.dll.a
+  TARGET_PDB = 2_4_TrieTree.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build 2_4_TrieTree/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug\2_4_TrieTree && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build 2_4_TrieTree/edit_cache: phony 2_4_TrieTree/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build 2_4_TrieTree/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug\2_4_TrieTree && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp -BC:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build 2_4_TrieTree/rebuild_cache: phony 2_4_TrieTree/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 2_5_Graph
+
+
+#############################################
+# Order-only phony target for 2_5_Graph
+
+build cmake_object_order_depends_target_2_5_Graph: phony || 2_5_Graph/CMakeFiles/2_5_Graph.dir
+
+build 2_5_Graph/CMakeFiles/2_5_Graph.dir/main.cpp.obj: CXX_COMPILER__2_5_Graph_Debug C$:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/2_5_Graph/main.cpp || cmake_object_order_depends_target_2_5_Graph
+  DEP_FILE = 2_5_Graph\CMakeFiles\2_5_Graph.dir\main.cpp.obj.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = 2_5_Graph\CMakeFiles\2_5_Graph.dir
+  OBJECT_FILE_DIR = 2_5_Graph\CMakeFiles\2_5_Graph.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 2_5_Graph
+
+
+#############################################
+# Link the executable 2_5_Graph\2_5_Graph.exe
+
+build 2_5_Graph/2_5_Graph.exe: CXX_EXECUTABLE_LINKER__2_5_Graph_Debug 2_5_Graph/CMakeFiles/2_5_Graph.dir/main.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = 2_5_Graph\CMakeFiles\2_5_Graph.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 2_5_Graph\2_5_Graph.exe
+  TARGET_IMPLIB = 2_5_Graph\lib2_5_Graph.dll.a
+  TARGET_PDB = 2_5_Graph.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build 2_5_Graph/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug\2_5_Graph && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build 2_5_Graph/edit_cache: phony 2_5_Graph/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build 2_5_Graph/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug\2_5_Graph && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp -BC:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build 2_5_Graph/rebuild_cache: phony 2_5_Graph/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 2_6_GraphUndirected
+
+
+#############################################
+# Order-only phony target for 2_6_GraphUndirected
+
+build cmake_object_order_depends_target_2_6_GraphUndirected: phony || 2_6_GraphUndirected/CMakeFiles/2_6_GraphUndirected.dir
+
+build 2_6_GraphUndirected/CMakeFiles/2_6_GraphUndirected.dir/main.cpp.obj: CXX_COMPILER__2_6_GraphUndirected_Debug C$:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/2_6_GraphUndirected/main.cpp || cmake_object_order_depends_target_2_6_GraphUndirected
+  DEP_FILE = 2_6_GraphUndirected\CMakeFiles\2_6_GraphUndirected.dir\main.cpp.obj.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = 2_6_GraphUndirected\CMakeFiles\2_6_GraphUndirected.dir
+  OBJECT_FILE_DIR = 2_6_GraphUndirected\CMakeFiles\2_6_GraphUndirected.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 2_6_GraphUndirected
+
+
+#############################################
+# Link the executable 2_6_GraphUndirected\2_6_GraphUndirected.exe
+
+build 2_6_GraphUndirected/2_6_GraphUndirected.exe: CXX_EXECUTABLE_LINKER__2_6_GraphUndirected_Debug 2_6_GraphUndirected/CMakeFiles/2_6_GraphUndirected.dir/main.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = 2_6_GraphUndirected\CMakeFiles\2_6_GraphUndirected.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 2_6_GraphUndirected\2_6_GraphUndirected.exe
+  TARGET_IMPLIB = 2_6_GraphUndirected\lib2_6_GraphUndirected.dll.a
+  TARGET_PDB = 2_6_GraphUndirected.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build 2_6_GraphUndirected/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug\2_6_GraphUndirected && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build 2_6_GraphUndirected/edit_cache: phony 2_6_GraphUndirected/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build 2_6_GraphUndirected/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug\2_6_GraphUndirected && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp -BC:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build 2_6_GraphUndirected/rebuild_cache: phony 2_6_GraphUndirected/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 3_1_Searching
+
+
+#############################################
+# Order-only phony target for 3_1_Searching
+
+build cmake_object_order_depends_target_3_1_Searching: phony || 3_1_Searching/CMakeFiles/3_1_Searching.dir
+
+build 3_1_Searching/CMakeFiles/3_1_Searching.dir/main.cpp.obj: CXX_COMPILER__3_1_Searching_Debug C$:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/3_1_Searching/main.cpp || cmake_object_order_depends_target_3_1_Searching
+  DEP_FILE = 3_1_Searching\CMakeFiles\3_1_Searching.dir\main.cpp.obj.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = 3_1_Searching\CMakeFiles\3_1_Searching.dir
+  OBJECT_FILE_DIR = 3_1_Searching\CMakeFiles\3_1_Searching.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 3_1_Searching
+
+
+#############################################
+# Link the executable 3_1_Searching\3_1_Searching.exe
+
+build 3_1_Searching/3_1_Searching.exe: CXX_EXECUTABLE_LINKER__3_1_Searching_Debug 3_1_Searching/CMakeFiles/3_1_Searching.dir/main.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = 3_1_Searching\CMakeFiles\3_1_Searching.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 3_1_Searching\3_1_Searching.exe
+  TARGET_IMPLIB = 3_1_Searching\lib3_1_Searching.dll.a
+  TARGET_PDB = 3_1_Searching.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build 3_1_Searching/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug\3_1_Searching && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build 3_1_Searching/edit_cache: phony 3_1_Searching/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build 3_1_Searching/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug\3_1_Searching && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp -BC:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build 3_1_Searching/rebuild_cache: phony 3_1_Searching/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 3_2_Sorting
+
+
+#############################################
+# Order-only phony target for 3_2_Sorting
+
+build cmake_object_order_depends_target_3_2_Sorting: phony || 3_2_Sorting/CMakeFiles/3_2_Sorting.dir
+
+build 3_2_Sorting/CMakeFiles/3_2_Sorting.dir/main.cpp.obj: CXX_COMPILER__3_2_Sorting_Debug C$:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/3_2_Sorting/main.cpp || cmake_object_order_depends_target_3_2_Sorting
+  DEP_FILE = 3_2_Sorting\CMakeFiles\3_2_Sorting.dir\main.cpp.obj.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = 3_2_Sorting\CMakeFiles\3_2_Sorting.dir
+  OBJECT_FILE_DIR = 3_2_Sorting\CMakeFiles\3_2_Sorting.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 3_2_Sorting
+
+
+#############################################
+# Link the executable 3_2_Sorting\3_2_Sorting.exe
+
+build 3_2_Sorting/3_2_Sorting.exe: CXX_EXECUTABLE_LINKER__3_2_Sorting_Debug 3_2_Sorting/CMakeFiles/3_2_Sorting.dir/main.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = 3_2_Sorting\CMakeFiles\3_2_Sorting.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 3_2_Sorting\3_2_Sorting.exe
+  TARGET_IMPLIB = 3_2_Sorting\lib3_2_Sorting.dll.a
+  TARGET_PDB = 3_2_Sorting.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build 3_2_Sorting/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug\3_2_Sorting && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build 3_2_Sorting/edit_cache: phony 3_2_Sorting/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build 3_2_Sorting/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug\3_2_Sorting && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp -BC:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build 3_2_Sorting/rebuild_cache: phony 3_2_Sorting/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 3_3_String
+
+
+#############################################
+# Order-only phony target for 3_3_String
+
+build cmake_object_order_depends_target_3_3_String: phony || 3_3_String/CMakeFiles/3_3_String.dir
+
+build 3_3_String/CMakeFiles/3_3_String.dir/main.cpp.obj: CXX_COMPILER__3_3_String_Debug C$:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/3_3_String/main.cpp || cmake_object_order_depends_target_3_3_String
+  DEP_FILE = 3_3_String\CMakeFiles\3_3_String.dir\main.cpp.obj.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = 3_3_String\CMakeFiles\3_3_String.dir
+  OBJECT_FILE_DIR = 3_3_String\CMakeFiles\3_3_String.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 3_3_String
+
+
+#############################################
+# Link the executable 3_3_String\3_3_String.exe
+
+build 3_3_String/3_3_String.exe: CXX_EXECUTABLE_LINKER__3_3_String_Debug 3_3_String/CMakeFiles/3_3_String.dir/main.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = 3_3_String\CMakeFiles\3_3_String.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 3_3_String\3_3_String.exe
+  TARGET_IMPLIB = 3_3_String\lib3_3_String.dll.a
+  TARGET_PDB = 3_3_String.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build 3_3_String/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug\3_3_String && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build 3_3_String/edit_cache: phony 3_3_String/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build 3_3_String/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug\3_3_String && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp -BC:\Users\pc1\Desktop\DataStructure_Backup\DataStructures_Algorithms_Cpp\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build 3_3_String/rebuild_cache: phony 3_3_String/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
 # Target aliases.
 
-build DataStructures_Algorithms_Cpp: phony DataStructures_Algorithms_Cpp/DataStructures_Algorithms_Cpp.exe
+build 1_1_ArrayList: phony 1_1_ArrayList/1_1_ArrayList.exe
 
-build DataStructures_Algorithms_Cpp.exe: phony DataStructures_Algorithms_Cpp/DataStructures_Algorithms_Cpp.exe
+build 1_1_ArrayList.exe: phony 1_1_ArrayList/1_1_ArrayList.exe
 
-build Folder2: phony Folder2/Folder2.exe
+build 1_2_LinkedList: phony 1_2_LinkedList/1_2_LinkedList.exe
 
-build Folder2.exe: phony Folder2/Folder2.exe
+build 1_2_LinkedList.exe: phony 1_2_LinkedList/1_2_LinkedList.exe
+
+build 1_3_Stack: phony 1_3_Stack/1_3_Stack.exe
+
+build 1_3_Stack.exe: phony 1_3_Stack/1_3_Stack.exe
+
+build 1_4_Queue: phony 1_4_Queue/1_4_Queue.exe
+
+build 1_4_Queue.exe: phony 1_4_Queue/1_4_Queue.exe
+
+build 1_5_Hashtable: phony 1_5_Hashtable/1_5_Hashtable.exe
+
+build 1_5_Hashtable.exe: phony 1_5_Hashtable/1_5_Hashtable.exe
+
+build 2_1_BinaryTree: phony 2_1_BinaryTree/2_1_BinaryTree.exe
+
+build 2_1_BinaryTree.exe: phony 2_1_BinaryTree/2_1_BinaryTree.exe
+
+build 2_2_AVLTree: phony 2_2_AVLTree/2_2_AVLTree.exe
+
+build 2_2_AVLTree.exe: phony 2_2_AVLTree/2_2_AVLTree.exe
+
+build 2_3_HeapTree: phony 2_3_HeapTree/2_3_HeapTree.exe
+
+build 2_3_HeapTree.exe: phony 2_3_HeapTree/2_3_HeapTree.exe
+
+build 2_4_TrieTree: phony 2_4_TrieTree/2_4_TrieTree.exe
+
+build 2_4_TrieTree.exe: phony 2_4_TrieTree/2_4_TrieTree.exe
+
+build 2_5_Graph: phony 2_5_Graph/2_5_Graph.exe
+
+build 2_5_Graph.exe: phony 2_5_Graph/2_5_Graph.exe
+
+build 2_6_GraphUndirected: phony 2_6_GraphUndirected/2_6_GraphUndirected.exe
+
+build 2_6_GraphUndirected.exe: phony 2_6_GraphUndirected/2_6_GraphUndirected.exe
+
+build 3_1_Searching: phony 3_1_Searching/3_1_Searching.exe
+
+build 3_1_Searching.exe: phony 3_1_Searching/3_1_Searching.exe
+
+build 3_2_Sorting: phony 3_2_Sorting/3_2_Sorting.exe
+
+build 3_2_Sorting.exe: phony 3_2_Sorting/3_2_Sorting.exe
+
+build 3_3_String: phony 3_3_String/3_3_String.exe
+
+build 3_3_String.exe: phony 3_3_String/3_3_String.exe
+
+build CMakeExample: phony CMakeExample/CMakeExample.exe
+
+build CMakeExample.exe: phony CMakeExample/CMakeExample.exe
 
 # =============================================================================
 # Folder targets.
@@ -204,21 +1049,112 @@ build Folder2.exe: phony Folder2/Folder2.exe
 #############################################
 # Folder: C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/cmake-build-debug
 
-build all: phony DataStructures_Algorithms_Cpp/all Folder2/all
+build all: phony CMakeExample/all 1_1_ArrayList/all 1_2_LinkedList/all 1_3_Stack/all 1_4_Queue/all 1_5_Hashtable/all 2_1_BinaryTree/all 2_2_AVLTree/all 2_3_HeapTree/all 2_4_TrieTree/all 2_5_Graph/all 2_6_GraphUndirected/all 3_1_Searching/all 3_2_Sorting/all 3_3_String/all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/cmake-build-debug/DataStructures_Algorithms_Cpp
+# Folder: C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/cmake-build-debug/1_1_ArrayList
 
-build DataStructures_Algorithms_Cpp/all: phony DataStructures_Algorithms_Cpp/DataStructures_Algorithms_Cpp.exe
+build 1_1_ArrayList/all: phony 1_1_ArrayList/1_1_ArrayList.exe
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/cmake-build-debug/Folder2
+# Folder: C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/cmake-build-debug/1_2_LinkedList
 
-build Folder2/all: phony Folder2/Folder2.exe
+build 1_2_LinkedList/all: phony 1_2_LinkedList/1_2_LinkedList.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/cmake-build-debug/1_3_Stack
+
+build 1_3_Stack/all: phony 1_3_Stack/1_3_Stack.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/cmake-build-debug/1_4_Queue
+
+build 1_4_Queue/all: phony 1_4_Queue/1_4_Queue.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/cmake-build-debug/1_5_Hashtable
+
+build 1_5_Hashtable/all: phony 1_5_Hashtable/1_5_Hashtable.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/cmake-build-debug/2_1_BinaryTree
+
+build 2_1_BinaryTree/all: phony 2_1_BinaryTree/2_1_BinaryTree.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/cmake-build-debug/2_2_AVLTree
+
+build 2_2_AVLTree/all: phony 2_2_AVLTree/2_2_AVLTree.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/cmake-build-debug/2_3_HeapTree
+
+build 2_3_HeapTree/all: phony 2_3_HeapTree/2_3_HeapTree.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/cmake-build-debug/2_4_TrieTree
+
+build 2_4_TrieTree/all: phony 2_4_TrieTree/2_4_TrieTree.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/cmake-build-debug/2_5_Graph
+
+build 2_5_Graph/all: phony 2_5_Graph/2_5_Graph.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/cmake-build-debug/2_6_GraphUndirected
+
+build 2_6_GraphUndirected/all: phony 2_6_GraphUndirected/2_6_GraphUndirected.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/cmake-build-debug/3_1_Searching
+
+build 3_1_Searching/all: phony 3_1_Searching/3_1_Searching.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/cmake-build-debug/3_2_Sorting
+
+build 3_2_Sorting/all: phony 3_2_Sorting/3_2_Sorting.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/cmake-build-debug/3_3_String
+
+build 3_3_String/all: phony 3_3_String/3_3_String.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/pc1/Desktop/DataStructure_Backup/DataStructures_Algorithms_Cpp/cmake-build-debug/CMakeExample
+
+build CMakeExample/all: phony CMakeExample/CMakeExample.exe
 
 # =============================================================================
 # Built-in targets
@@ -227,14 +1163,14 @@ build Folder2/all: phony Folder2/Folder2.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../DataStructures_Algorithms_Cpp/CMakeLists.txt ../Folder2/CMakeLists.txt C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeRCCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../1_1_ArrayList/CMakeLists.txt ../1_2_LinkedList/CMakeLists.txt ../1_3_Stack/CMakeLists.txt ../1_4_Queue/CMakeLists.txt ../1_5_Hashtable/CMakeLists.txt ../2_1_BinaryTree/CMakeLists.txt ../2_2_AVLTree/CMakeLists.txt ../2_3_HeapTree/CMakeLists.txt ../2_4_TrieTree/CMakeLists.txt ../2_5_Graph/CMakeLists.txt ../2_6_GraphUndirected/CMakeLists.txt ../3_1_Searching/CMakeLists.txt ../3_2_Sorting/CMakeLists.txt ../3_3_String/CMakeLists.txt ../CMakeExample/CMakeLists.txt ../CMakeLists.txt C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeRCCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../DataStructures_Algorithms_Cpp/CMakeLists.txt ../Folder2/CMakeLists.txt C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeRCCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
+build ../1_1_ArrayList/CMakeLists.txt ../1_2_LinkedList/CMakeLists.txt ../1_3_Stack/CMakeLists.txt ../1_4_Queue/CMakeLists.txt ../1_5_Hashtable/CMakeLists.txt ../2_1_BinaryTree/CMakeLists.txt ../2_2_AVLTree/CMakeLists.txt ../2_3_HeapTree/CMakeLists.txt ../2_4_TrieTree/CMakeLists.txt ../2_5_Graph/CMakeLists.txt ../2_6_GraphUndirected/CMakeLists.txt ../3_1_Searching/CMakeLists.txt ../3_2_Sorting/CMakeLists.txt ../3_3_String/CMakeLists.txt ../CMakeExample/CMakeLists.txt ../CMakeLists.txt C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeRCCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
 
 
 #############################################
