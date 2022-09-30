@@ -1,6 +1,11 @@
 # Visual Studio
 .vs/
 
+
+#Cmake
+out/
+cmake-build-debug/
+
 # Prerequisites
 *.d
 
