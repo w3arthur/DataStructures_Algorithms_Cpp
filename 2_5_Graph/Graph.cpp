@@ -76,7 +76,7 @@ public:
     void removeNode(char label)
     {
         auto it = nodes.find(label);
-        if ( it == nodes.end()) return;
+        if ( !(it == nodes.end()) ) return;
         nodes.erase(label);
         edges.erase( it->second );
     }

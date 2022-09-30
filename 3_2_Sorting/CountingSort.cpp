@@ -1,11 +1,10 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include <algorithm>
 using std::string, std::to_string, std::swap, std::cout, std::exception;
-
 static void countingSort(int*& array, const int& arrayLength)
 {
-
     auto maxValue =  *std::max_element(array, array+arrayLength - 1 );
     int countsLength = maxValue + 1;
     int* counts = new int[countsLength];

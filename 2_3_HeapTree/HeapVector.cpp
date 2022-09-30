@@ -1,3 +1,5 @@
+//check again  insert(int value) function
+
 #pragma once
 #include <iostream>
 #include <string>
@@ -57,8 +59,7 @@ public:
     {
         if (_size >= vector.size()) vector.push_back(value);
         _size ++;
-        vector[_size] = value;   //
-
+        vector.push_back(value);   //vector[_size] = value;
         shiftUp(_size);
     }
     int extractMax() //remove()

@@ -48,7 +48,7 @@ struct Edge {
 struct NodePriority {
     typedef std::shared_ptr<struct Node> sp_Node;
     sp_Node node;
-    [[maybe_unused]] int priority;
+    int priority;
     explicit NodePriority(sp_Node node, int priority) : node{std::move(node)}, priority{priority} {}
     ~NodePriority() { cout << "delQPN:" << "" + node->print() << "; "; }
    // /*!*/ bool operator<(const struct NodePriority &other) const { return this->priority < other.priority; } /*!*/
@@ -61,20 +61,16 @@ private:
     typedef shared_ptr<struct NodePriority> sp_NodePriority;
     //typedef std::_Rb_tree_const_iterator<pair<const char, sp_Node>> it_Node;
     map<char, sp_Node> nodes;
-    bool isNull(std::_Rb_tree_const_iterator<pair<const char, sp_Node>> itNode) { return itNode == nodes.end(); }
-    static list<char> buildPath(map<sp_Node, sp_Node>& previousNodes, const sp_Node& toNode) {
+
+    list<char> buildPath(map<sp_Node, sp_Node>& previousNodes, const sp_Node& toNode) const {
         stack<sp_Node> stack{};
         stack.push(toNode);
         auto previous = previousNodes.find(toNode)->second;
         while (true)
-        { //!IsNull(previous!)
+        {
             stack.push(previous);
-            try
-            {
-                previous = previousNodes.find(previous)->second;
-                if (previous == nullptr) throw exception();
-            }
-            catch (...) { break; } //previous = previousNodes.GetValueOrDefault(previous, null);
+            if (previousNodes.find(previous) == previousNodes.end()) break;
+            previous = previousNodes.find(previous)->second;
         }
         return toList(stack);
     }
@@ -95,10 +91,13 @@ private:
         }
         return false;
     }
-    bool containsNode(const sp_Node& node) const { return !isNull(nodes.find(node->label)); }
+
+
+    bool containsNode(const sp_Node& node) const { return !(nodes.find(node->label) == nodes.end()); }
 
 
 public:
+
     explicit Graph() : nodes{} {}
     ~Graph() = default;
     void addNode(char label)
@@ -106,17 +105,20 @@ public:
         auto newNode = make_shared<Node>(label);
         nodes.insert({label, newNode});
     }
+
+
+
     void addEdge(char from, char to, int weight) const
     { // relationship
-        if (isNull(nodes.find(from)) || isNull(nodes.find(to))) throw exception();
+        if (nodes.find(from) == nodes.end() || nodes.find(to) == nodes.end()) throw exception();
         auto fromNode = nodes.find(from)->second;
         auto toNode = nodes.find(to)->second;
         fromNode->addEdge(toNode, weight);
         toNode->addEdge(fromNode, weight);
     }
-    [[nodiscard]] list<char> getShortestPath(char from, char to) const
+    list<char> getShortestPath(char from, char to) const
     {
-        if (isNull(nodes.find(from)) || isNull(nodes.find(to))) throw exception();
+        if (nodes.find(from) == nodes.end() || nodes.find(to) == nodes.end()) throw exception();
         auto fromNode = nodes.find(from)->second;
         auto toNode = nodes.find(to)->second;
         map<sp_Node, int> distances{};

@@ -20,18 +20,18 @@ int main() {
     cout << heap.print() << endl;
 
     cout << endl << "Heap2" << endl;
-    //HeapVector heap2{};     //To fix removing and bubble down  !!!
+    HeapVector heap2{};     //To fix removing and bubble down  !!!
 
-    //heap2.insert(20);
-    //heap2.insert(10);
-    //heap2.insert(5);
-    //heap2.insert(2);
+    heap2.insert(20);
+    heap2.insert(10);
+    heap2.insert(5);
+    heap2.insert(2);
 
     //to fix !!!! remove() and shiftDown
-   // cout <<  heap2.extractMax() << endl;
-  //  cout <<  heap2.extractMax() << endl;    //WRONG !!!
+    //cout <<  heap2.extractMax() << endl;
+    //cout <<  heap2.extractMax() << endl;    //WRONG !!!
 
-    //cout << heap2.print() << endl;
+    cout << heap2.print() << endl;
 
     return EXIT_SUCCESS;
 

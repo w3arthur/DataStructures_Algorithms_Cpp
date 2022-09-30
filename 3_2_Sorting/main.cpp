@@ -6,7 +6,7 @@
 #include "InsertionSort.cpp"
 #include "MergeSort.cpp"
 #include "QuickSort.cpp"
-//#include "CountingSort.cpp"
+#include "CountingSort.cpp"
 #include "BucketSort.cpp"
 using std::to_string,std::string, std::cout, std::endl;
 
@@ -38,9 +38,9 @@ int main()
     quickSort(array, arrayLength);
     cout <<"Quick Sort: " << print(array, arrayLength);
 
-    //memcpy(array, basicArray, arrayLength * sizeof(int));
-    //countingSort(array, arrayLength);
-    //cout <<"Counting Sort: " << print(array, arrayLength);
+    memcpy(array, basicArray, arrayLength * sizeof(int));
+    countingSort(array, arrayLength);
+    cout <<"Counting Sort: " << print(array, arrayLength);
 
     memcpy(array, basicArray, arrayLength * sizeof(int));
     bucketSort(array, arrayLength, 3);

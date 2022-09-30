@@ -46,7 +46,7 @@ inline void Array2<T>::resize()
 template<typename  T> bool Array2<T>::needToReSize() const { return arrayLength == count; }
 template<typename T> [[maybe_unused]] bool Array2<T>::needToReSize(int& index) const { return index >= count; }
 //public
-template<typename T> inline Array2<T>::Array2(int length) : count{}, arrayLength{length}, itemArray {new T[arrayLength]} { }
+template<typename T> inline Array2<T>::Array2(int length) : count{}, arrayLength{length}, itemArray {new T[length]} { }
 //template<typename T> inline Array2<T>::Array2() { Array2(5); }
 template<typename T> [[maybe_unused]] bool Array2<T>::contains(T item) const { return indexOf(item) != -1; }
 template<typename T> int Array2<T>::indexOf(T& item) const { for (int i = 0; i < count; ++i) if (itemArray[i] == item) return i; return -1; }
