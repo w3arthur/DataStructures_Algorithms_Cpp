@@ -1,23 +1,22 @@
 //Fix needToSwap function
 //Delete vector version
-#pragma once
+
 #include <iostream>
 #include <string>
 //move to smart pointer
 //move to string_view to print
 //fix destructures!     List.root   List.last
 //delete in the middle
-using std::string, std::to_string, std::exception, std::cout;
+using std::string, std::to_string, std::cout, std::swap, std::exception;
 class Heap {
 private:
     int count;
     int* itemArray;
     int arrayLength;
-    void swap(const int& a, const int b) const { std::swap(itemArray[a], itemArray[b]); }
-    static int parent(int& index) {return index / 2;} // index/2
-    static int child(int& index) {return index * 2;} // index*2
-    static int left(int& index) { return  child(index) + 1; } // index*2+1
-    static int right(int& index) { return  child(index) + 2; } // index*2+2
+    int parent(int& index) const { return index / 2; } // index/2
+    int child(int& index) const { return index * 2; } // index*2
+    int left(int& index) const { return  child(index) + 1; } // index*2+1
+    int right(int& index) const { return  child(index) + 2; } // index*2+2
     void bubbleUp() const
     {
         auto index = count - 1; //last
@@ -61,34 +60,34 @@ private:
     }
 
 public:
-    explicit Heap() : arrayLength{20}, itemArray{new int[20]}, count{} {}
+    explicit Heap() : arrayLength{ 20 }, itemArray{ new int[20] }, count{} {}
     ~Heap() { delete[](itemArray); }
-    [[nodiscard]] bool isFull() const { return count == arrayLength; }
-    [[nodiscard]] bool isEmpty() const { return count == 0; }
+    bool isFull() const { return count == arrayLength; }
+    bool isEmpty() const { return count == 0; }
     void insert(const int data)
     {
-        if(isFull()) throw exception(); //or extend
+        if (isFull()) throw new exception(); //or extend
         itemArray[count] = data;
-        count ++;
+        count++;
         bubbleUp();
     }
-    [[nodiscard]] int max() const
+    int max() const
     {
-        if (isEmpty()) throw exception();
+        if (isEmpty()) throw new exception();
         return itemArray[0];    //root
     }
     int remove() //remove top
     {
-        if (isEmpty()) throw exception();
+        if (isEmpty()) throw new exception();
         int temp = itemArray[0];
         count--;
         itemArray[0] = itemArray[count];
         bubbleDown();
         return temp;
     }
-    [[nodiscard]] string print() const {
+    string print() const {
         string str{};
-        for(int i{}; i < count; i++) str += to_string(itemArray[i]) + ", ";
+        for (int i{}; i < count; i++) str += to_string(itemArray[i]) + ", ";
         str += "\n";
         return str;
     }

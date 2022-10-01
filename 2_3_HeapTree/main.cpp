@@ -6,20 +6,21 @@
 #include "HeapVector.cpp"
 using  std::cout, std::endl;
 int main() {
-    cout << "HeapTree (please fix!!!)" << endl;
+    cout << "HeapTree (please fix!!!)1212" << endl;
 
     Heap heap{};
+    
+    heap.insert(2);
     heap.insert(20);
     heap.insert(10);
-    heap.insert(5);
-    heap.insert(2);
+    heap.insert(50); // will remove
     heap.insert(6);
     heap.insert(26); // will remove
     cout <<  heap.remove() << endl;
-    cout <<  heap.remove() << endl;
+  cout <<  heap.remove() << endl;
     cout << heap.print() << endl;
 
-    cout << endl << "Heap2 (Vector) (please fix!!!)" << endl;
+    cout << endl << "Heap2 (Vector)" << endl;
     HeapVector heap2{};     //To fix removing and bubble down  !!!
 
     heap2.insert(20);
@@ -28,8 +29,8 @@ int main() {
     heap2.insert(2);
 
     //to fix !!!! remove() and shiftDown
-    //cout <<  heap2.extractMax() << endl;
-    //cout <<  heap2.extractMax() << endl;    //WRONG !!!
+    cout <<  heap2.extractMax() << endl;
+    cout <<  heap2.extractMax() << endl;    //WRONG !!!
 
     cout << heap2.print() << endl;
 
