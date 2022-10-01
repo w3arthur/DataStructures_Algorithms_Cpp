@@ -42,7 +42,7 @@ private:
     bool isNull(struct Node* node) const { return node == nullptr; }
     bool isNull(string word) const { return word.length() == 0; }
 
-    [[maybe_unused]] string& toLowerCaseSting(const string& str)
+    [[maybe_unused]] string toLowerCaseSting(const string& str)
     {
         string lowerCaseString = str;
         for (int i = 0; i < str.length(); i++) lowerCaseString += tolower(str[i]);

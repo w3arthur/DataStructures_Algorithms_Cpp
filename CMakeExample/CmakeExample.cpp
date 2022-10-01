@@ -7,6 +7,6 @@ using namespace std;
 
 int main()
 {
-	cout << "Hello C435345Make." << endl;
-	return 0;
+	cout << "Hello CMake1." << endl;
+	return EXIT_SUCCESS;
 }

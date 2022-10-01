@@ -28,5 +28,5 @@ int main() {
     cout << endl;
     cout << "end" << endl;
 
-    return 0;
+    return EXIT_SUCCESS;
 }
