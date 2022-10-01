@@ -47,10 +47,10 @@ private:
     [[nodiscard]] static bool isNull(const p_Node& node) { return node == nullptr; }
     [[nodiscard]] static bool isNull(const string& word) { return word.length() == 0; }
 
-    [[maybe_unused]] static string& toLowerCaseSting(const string& str)
+    static string toLowerCaseSting(const string& str)
     {
         string lowerCaseString{};
-        for (int i = 0; i < str.length(); i++) lowerCaseString += tolower(str[i]);
+        for (char i : str) lowerCaseString += tolower(i);
         return lowerCaseString;
     }
     static string& trim(string& str){
@@ -135,9 +135,9 @@ public:
     void remove(const string& word) { remove(word, 0, root); }
     string traversePreOrder() { string str{}; traversePreOrder(root, str);str = trim(str) ;str += "\n"; return str  ; }
 
-    [[maybe_unused]] void traversePostOrder() { traversePostOrder(root); }
+    void traversePostOrder() { traversePostOrder(root); }
 
-    [[maybe_unused]] list<string>& findWords(const string& word) //לחזור
+    list<string> findWords(const string& word) //לחזור
     {
         list<string> wordList{};    //java ArrayList<>
         auto startNode = findWordEnd(word);    //startPoint

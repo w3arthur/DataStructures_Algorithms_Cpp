@@ -4,7 +4,7 @@
 
 
 #include "Trie.cpp"
-//#include "TrieC.c"    // fix c implementation
+#include "TrieC.c"    // fix c implementation
 using  std::cout, std::endl;
 int main() {
 
@@ -25,16 +25,16 @@ int main() {
     }
 
 
-    // fix c implementation
-//    printf("\n\n");
-//    printf("Trie Tree C:\n");
-//    struct node *root = NULL;
-//    insert(&root, "KIT");
-//    insert(&root, "KITTTE");
-//    insert(&root, "CATTLE");
-//    insert(&root, "KIR");
-//    insert(&root, "KIAR");
-//    print(root);
+     //fix c implementation
+    printf("\n\n");
+    printf("Trie Tree C:\n");
+    struct node *root = NULL;
+    insert(&root, "KIT");
+    insert(&root, "KITTTE");
+    insert(&root, "CATTLE");
+    insert(&root, "KIR");
+    insert(&root, "KIAR");
+    print(root);
 
 
     return EXIT_SUCCESS;
