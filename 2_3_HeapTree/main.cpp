@@ -6,7 +6,7 @@
 #include "HeapVector.cpp"
 using  std::cout, std::endl;
 int main() {
-    cout << "HeapTree" << endl;
+    cout << "HeapTree (please fix!!!)" << endl;
 
     Heap heap{};
     heap.insert(20);
@@ -19,7 +19,7 @@ int main() {
     cout <<  heap.remove() << endl;
     cout << heap.print() << endl;
 
-    cout << endl << "Heap2" << endl;
+    cout << endl << "Heap2 (Vector) (please fix!!!)" << endl;
     HeapVector heap2{};     //To fix removing and bubble down  !!!
 
     heap2.insert(20);
@@ -34,7 +34,6 @@ int main() {
     cout << heap2.print() << endl;
 
     return EXIT_SUCCESS;
-
 }
 
 [[maybe_unused]] int getKthLargest (const int* array, const int& arrayLength,const int& kth)
