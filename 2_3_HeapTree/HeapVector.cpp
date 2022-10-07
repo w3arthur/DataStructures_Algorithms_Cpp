@@ -49,7 +49,7 @@ private:
 
 public:
     explicit HeapVector() : vector{}, _size{} {}  //set to NULL
-    ~HeapVector() { }
+    ~HeapVector() = default;
     bool isEmpty() const { return _size == 0; }
     int getMax() const { return vector[0]; }
     void insert(const int& value)

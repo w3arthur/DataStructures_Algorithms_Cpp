@@ -13,10 +13,10 @@ private:
     int count;
     int* itemArray;
     int arrayLength;
-    int parent(int& index) const { return index / 2; } // index/2
-    int child(int& index) const { return index * 2; } // index*2
-    int left(int& index) const { return  child(index) + 1; } // index*2+1
-    int right(int& index) const { return  child(index) + 2; } // index*2+2
+    static int parent(int& index) { return index / 2; } // index/2
+    static int child(int& index) { return index * 2; } // index*2
+    static int left(int& index) { return  child(index) + 1; } // index*2+1
+    static int right(int& index) { return  child(index) + 2; } // index*2+2
     void bubbleUp() const
     {
         auto index = count - 1; //last
@@ -66,19 +66,19 @@ public:
     bool isEmpty() const { return count == 0; }
     void insert(const int data)
     {
-        if (isFull()) throw new exception(); //or extend
+        if (isFull()) throw exception(); //or extend
         itemArray[count] = data;
         count++;
         bubbleUp();
     }
     int max() const
     {
-        if (isEmpty()) throw new exception();
+        if (isEmpty()) throw exception();
         return itemArray[0];    //root
     }
     int remove() //remove top
     {
-        if (isEmpty()) throw new exception();
+        if (isEmpty()) throw exception();
         int temp = itemArray[0];
         count--;
         itemArray[0] = itemArray[count];

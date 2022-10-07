@@ -17,7 +17,7 @@ int main() {
     heap.insert(6);
     heap.insert(26); // will remove
     cout <<  heap.remove() << endl;
-  cout <<  heap.remove() << endl;
+    cout <<  heap.remove() << endl;
     cout << heap.print() << endl;
 
     cout << endl << "Heap2 (Vector)" << endl;
@@ -36,6 +36,16 @@ int main() {
 
     return EXIT_SUCCESS;
 }
+
+
+
+
+
+
+
+
+
+
 
 [[maybe_unused]] int getKthLargest (const int* array, const int& arrayLength,const int& kth)
 {
