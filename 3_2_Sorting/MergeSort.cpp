@@ -39,7 +39,7 @@ static void merge(int*& array, struct Array& left, struct Array& right )
     int l{0}, r{0}, arr{0};
     while (l < leftLength && r < rightLength)
     {
-        if (rightArray[l] <= rightArray[r]) array[arr++] = leftArray[l++];
+        if (leftArray[l] <= rightArray[r]) array[arr++] = leftArray[l++];
         else array[arr++] = rightArray[r++];
     }
     // copy remaining items in sorted array!
