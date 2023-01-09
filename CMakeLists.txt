@@ -11,6 +11,7 @@ set (CMAKE_CXX_STANDARD 20)
 project ("CMakeExample")
 
 
+
 # Include sub-projects.
 add_subdirectory ("CMakeExample")
 add_subdirectory ("1_1_ArrayList")
