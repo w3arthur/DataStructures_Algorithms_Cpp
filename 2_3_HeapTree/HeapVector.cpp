@@ -68,7 +68,7 @@ public:
         shiftDown(0);
         return maxNum;
     }
-    string print() const {
+    [[nodiscard]] string print() const {
         string str{};
         for (int i{}; i < _size; i++) str += to_string(vector[i]) + ", ";
         //for(auto data : vector) str += to_string(data) + ", ";
