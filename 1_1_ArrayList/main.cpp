@@ -1,8 +1,7 @@
 //Fix Array3
 #include <iostream>
-#include "Array1.cpp"
-#include "Array2.cpp"
-#include "Array3.cpp"
+#include "Array1.h"
+#include "Array2.h"
 #include <array>
 using std::cout, std::boolalpha, std::endl;
 int main()
@@ -44,21 +43,7 @@ int main()
 //    for (int i = 0; i < array.size(); ++i) {
 //    	cout << array[i] << endl;
 //    }
-    Array3<int, 5> array3;
 
-    memset(array3.Data() /*&array3[0]*/, 0, array3.Size() * sizeof(int));
-
-    array3[2] = 5;
-    array3[4] = 8;
-
-    for (size_t i = 0; i < array3.Size(); ++i)
-    {
-        //array3[i] = 2;
-        //arr[i] = 2;
-        cout << array3[i] << endl;
-    }
-
-    //for(auto& a : array3 ) finish Iterator
 
     return EXIT_SUCCESS;
 }

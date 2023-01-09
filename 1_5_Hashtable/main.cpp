@@ -3,7 +3,7 @@
 #include <map>
 #include <set>
 #include <cctype>
-#include "HashtableChaining.cpp"
+#include "HashtableChaining.h"
 using std::cout, std::endl, std::string, std::map, std::set ;
 static char firstNonRepeatedChar(string str);
 static char firstRepeatedChar(string str);
@@ -40,8 +40,8 @@ static char firstNonRepeatedChar(string str) {
     map<char, int> map {};
     /*to lower case*/ for (int i = 0; i < str.length(); i++) str[i] = tolower(str[i]);
     for (auto ch : str) {
-        if (map.find(ch) != map.end()) map.find(ch)->second ++;
-        else map.insert(std::pair(ch, 1));
+        if (map.find(ch) != map.end()) map.find(ch)->second += 1;
+        else map.insert(std::pair<char, int>(ch, 1));
     }
     for (auto item : map)  if (item.second == 1) return (char)item.first;
     return '\0';

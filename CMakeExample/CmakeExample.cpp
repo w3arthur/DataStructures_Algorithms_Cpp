@@ -3,10 +3,12 @@
 
 #include "CmakeExample.h"
 
-using namespace std;
+
+
 
 int main()
 {
-	cout << "Hello CMake1." << endl;
-	return EXIT_SUCCESS;
+    cout << "Example Project!" << endl;
+
 }
+

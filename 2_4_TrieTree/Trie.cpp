@@ -13,8 +13,6 @@ using std::string, std::to_string, std::cout,  std::vector, std::map;
 using std::pair, std::list, std::shared_ptr, std::make_shared, std::exception;
 
 class Trie {   //for example only
-
-private:
     struct Node
     {
         typedef std::shared_ptr<struct Node> p_Node;

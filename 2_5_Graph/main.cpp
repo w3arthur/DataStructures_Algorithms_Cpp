@@ -6,7 +6,7 @@ using  std::cout, std::boolalpha, std::endl;
 int main() {
 
     cout << "Graph\n";   //retrieval
-
+        //all other methods not tested
     Graph graph{};
     graph.addNode('a');
     graph.addNode('b');
@@ -23,10 +23,14 @@ int main() {
     cout << boolalpha << graph.hasCycle() << "\n";
 
 
+    graph.ge
 
-    cout << graph.print() << "\n";
+
+
+
+    cout << "graph prin1111"<< graph.print() << "\n";
     graph.removeNode('b');
     cout << endl;
-    cout << graph.print() << "\n";
+    cout << "graph prin1111"<< graph.print() << "\n";
     return EXIT_SUCCESS;
 }

@@ -2,12 +2,12 @@
 
 #include <iostream>
 #include <list>
-#include "Tree.cpp"
+#include "TreeAvl.h"
 using  std::cout, std::endl;
 int main() {
     cout << "AVLTree" << endl;
 
-    Tree tree{};
+    TreeAvl tree{};
     tree.insert(30);
     tree.insert(20);
     tree.insert(10);

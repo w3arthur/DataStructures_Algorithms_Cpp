@@ -12,7 +12,6 @@ using std::string, std::to_string, std::cout, std::map, std::pair, std::set;
 using std::stack, std::queue, std::list, std::shared_ptr, std::make_shared, std::exception;
 
 class Graph {   //for example only
-private:
     struct Node {
      char label;
      explicit Node(char& label) : label{label} {   }

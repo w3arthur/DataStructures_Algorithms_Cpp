@@ -4,7 +4,6 @@
 
 using std::string, std::to_string, std::cout, std::swap;
 class HeapVector {
-private:
     int _size;
     std::vector<int> vector;
     int parent(int& i) const { return i / 2; }    // i/2   //i >> 1

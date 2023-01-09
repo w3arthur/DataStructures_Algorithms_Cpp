@@ -1,7 +1,7 @@
 //fix the issue with too much destructures
 
 #include <iostream>
-#include "Graph.cpp"
+#include "Graph.h"
 using  std::cout, std::endl, std::list;
 int main() {
 
@@ -12,7 +12,7 @@ int main() {
         graph1.addNode('b');
         graph1.addNode('c');
         graph1.addEdge('a', 'b', 3);
-         graph1.addEdge('a', 'c', 6);
+        graph1.addEdge('a', 'c', 6);
         graph1.addEdge('b', 'c', 6);
         cout << graph1.print() << endl;
 
@@ -27,9 +27,11 @@ int main() {
         graph2.addEdge('b', 'c', 10);
         auto path = graph2.getShortestPath('a', 'c');
         cout << endl;
-        for(auto node : path) cout << node << ", "; // a, b, c
+        for (auto node: path) cout << node << ", "; // a, b, c
         cout << endl << endl << endl << endl;
-
+    }
+    {
+        cout << "\n\nGraph:" << endl;
         Graph graph{};  //to fix !
         graph.addNode('a');
         graph.addNode('b');
@@ -40,8 +42,9 @@ int main() {
         graph.addEdge('c', 'd', 5);
         graph.addEdge('a', 'c', 1);
         graph.addEdge('b', 'c', 2);
+
         auto tree = graph.getMinimumSpanningTree();
-        cout << "Get Minimum Spanning Tree:" << endl;
+        cout << "Get Minimum Spanning TreeAvl:" << endl;
         cout << tree.print() << endl << endl;
     }
 

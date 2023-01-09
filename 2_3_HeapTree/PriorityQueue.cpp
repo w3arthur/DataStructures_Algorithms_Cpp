@@ -8,7 +8,6 @@
 //delete in the middle
 using std::string, std::to_string, std::cout;
 class PriorityQueue {   //for example only
-private:
     Heap heap;
 public:
     explicit PriorityQueue(): heap{} {}

@@ -9,7 +9,6 @@
 //delete in the middle
 using std::string, std::to_string, std::cout, std::swap, std::exception;
 class Heap {
-private:
     int count;
     int* itemArray;
     int arrayLength;

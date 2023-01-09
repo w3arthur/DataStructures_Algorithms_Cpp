@@ -1,8 +1,8 @@
 
 #include <iostream>
 #include <stack>
-#include "Stack.cpp"
-#include "ListedStack.cpp"
+#include "Stack.h"
+#include "ListedStack.h"
 using std::string, std::boolalpha, std::endl, std::cout;
 
 static bool isBalanced(const string &input);

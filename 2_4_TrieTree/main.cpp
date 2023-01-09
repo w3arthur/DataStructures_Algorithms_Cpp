@@ -27,7 +27,7 @@ int main() {
 
      //fix c implementation
     printf("\n\n");
-    printf("Trie Tree C:\n");
+    printf("Trie TreeAvl C:\n");
     struct node *root = NULL;
     insert(&root, "KIT");
     insert(&root, "KITTTE");

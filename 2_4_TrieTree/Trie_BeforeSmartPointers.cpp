@@ -12,7 +12,6 @@
 using std::string, std::to_string, std::list, std::vector, std::map;
 using  std::cout, std::exception;
 class Trie {   //for example only
-private:
     struct Node
     {
         char value;

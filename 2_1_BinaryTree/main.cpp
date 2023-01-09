@@ -1,17 +1,17 @@
 
 
 #include <iostream>
-#include "Tree.cpp"
+#include "Tree.h"
 using  std::cout, std::endl;
 int main() {
     cout << "BinaryTree" << endl;
-    Tree tree{};
+    TreeAvl tree{};
     tree.insert(5);
     tree.insert(10);
     tree.insert(20);
     tree.insert(2);
 
-    Tree tree2{};
+    TreeAvl tree2{};
     tree2.insert(5);
     tree2.insert(10);
     tree2.insert(20);
