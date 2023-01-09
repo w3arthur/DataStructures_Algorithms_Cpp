@@ -5,9 +5,9 @@
 using  std::cout, std::endl, std::list;
 int main() {
 
-    cout << "Graph\n";   //retrieval
+    cout << "GraphWheight\n";   //retrieval
     {
-        Graph graph1{};
+        GraphWheight graph1{};
         graph1.addNode('a');
         graph1.addNode('b');
         graph1.addNode('c');
@@ -18,7 +18,7 @@ int main() {
 
         cout << graph1.hasCycle() << endl;
 
-        Graph graph2{};
+        GraphWheight graph2{};
         graph2.addNode('a');
         graph2.addNode('b');
         graph2.addNode('c');
@@ -31,8 +31,8 @@ int main() {
         cout << endl << endl << endl << endl;
     }
     {
-        cout << "\n\nGraph:" << endl;
-        Graph graph{};  //to fix !
+        cout << "\n\nGraphWheight:" << endl;
+        GraphWheight graph{};  //to fix !
         graph.addNode('a');
         graph.addNode('b');
         graph.addNode('c');

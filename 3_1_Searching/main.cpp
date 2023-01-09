@@ -1,11 +1,11 @@
 
 #include <iostream>
 #include <stack>
-#include "LinearSearch.cpp"
-#include "BinarySearch.cpp"
-#include "TernarySearch.cpp"
-#include "JumpSearch.cpp"
-#include "ExponentialSearch.cpp"
+#include "LinearSearch.h"
+#include "BinarySearch.h"
+#include "TernarySearch.h"
+#include "JumpSearch.h"
+#include "ExponentialSearch.h"
 using std::string, std::cout, std::endl;
 
 static string print(int&& result) { return (result >= 0 ? to_string(result + 1 ) + " true" : to_string(result) + " false"); }

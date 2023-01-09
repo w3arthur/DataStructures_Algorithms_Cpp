@@ -1,13 +1,13 @@
 
 #include <iostream>
 #include <stack>
-#include "BubbleSort.cpp"
-#include "SelectionSort.cpp"
-#include "InsertionSort.cpp"
-#include "MergeSort.cpp"
+#include "BubbleSort.h"
+#include "SelectionSort.h"
+#include "InsertionSort.h"
+#include "MergeSort.h"
 #include "QuickSort.cpp"
-#include "CountingSort.cpp"
-#include "BucketSort.cpp"
+#include "CountingSort.h"
+#include "BucketSort.h"
 using std::to_string,std::string, std::cout, std::endl;
 
 static string print(int* array, int arrayLength) { string str {"["}; for(int i = 0; i < arrayLength; ++i) str += to_string(array[i]) + ", "; str += "]\n"; return str; }

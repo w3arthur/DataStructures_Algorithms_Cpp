@@ -57,6 +57,7 @@ static bool contains(const string& str, const string& str2)
 
 static string trim(string& str)
 {
+    //use ss
     size_t space = str.find_first_not_of(" \t");
     if( string::npos != space ) str = str.substr( space );
     return str;

@@ -55,7 +55,7 @@ struct NodePriority {
    // /*!*/ bool operator<(const struct NodePriority &other) const { return this->priority < other.priority; } /*!*/
 };
 
-class Graph {   //for example only
+class GraphWheight {   //for example only
     typedef shared_ptr<struct Node> sp_Node;
     typedef shared_ptr<struct Edge> sp_Edge;
     typedef shared_ptr<struct NodePriority> sp_NodePriority;
@@ -73,9 +73,9 @@ class Graph {   //for example only
 
 
 public:
-    explicit Graph() : nodes{} {}
+    explicit GraphWheight() : nodes{} {}
 
-    ~Graph() = default;
+    ~GraphWheight() = default;
 
     void addNode(char label);
 
@@ -87,7 +87,7 @@ public:
 
     bool containsNode(char label);
 
-    Graph getMinimumSpanningTree(); //to check
+    GraphWheight getMinimumSpanningTree(); //to check
 
     [[nodiscard]] string print() const;
 

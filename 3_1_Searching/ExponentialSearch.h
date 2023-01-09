@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 #include <cmath>
-#include "BinarySearch.cpp"
+#include "BinarySearch.h"
 
 using std::string, std::to_string, std::swap, std::cout, std::exception;
 static int exponentialSearch(int*& array, const int& arrayLength, const int& target)

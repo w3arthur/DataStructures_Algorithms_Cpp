@@ -1,7 +1,7 @@
 #pragma once
 #include "Graph.h"
 
-list<char> Graph::buildPath(map<sp_Node, sp_Node>& previousNodes, const sp_Node& toNode) {
+list<char> GraphWheight::buildPath(map<sp_Node, sp_Node>& previousNodes, const sp_Node& toNode) {
     stack<sp_Node> stack{};
     stack.push(toNode);
     auto previous = previousNodes.find(toNode)->second;
@@ -14,13 +14,13 @@ list<char> Graph::buildPath(map<sp_Node, sp_Node>& previousNodes, const sp_Node&
     return toList(stack);
 }
 
-list<char> Graph::toList(stack<sp_Node> &stack) {   //fix to insert with it
+list<char> GraphWheight::toList(stack<sp_Node> &stack) {   //fix to insert with it
     list<char> sortedList{};
     while (!stack.empty()) { sortedList.push_back(stack.top()->label); stack.pop(); }
     return sortedList;
 }
 
-bool Graph::hasCycle(const sp_Node& node, const sp_Node& parent, set<sp_Node>& visited) const
+bool GraphWheight::hasCycle(const sp_Node& node, const sp_Node& parent, set<sp_Node>& visited) const
 {
     visited.insert(node);
     for (auto& edge : node->edges)
@@ -34,18 +34,18 @@ bool Graph::hasCycle(const sp_Node& node, const sp_Node& parent, set<sp_Node>& v
 }
 
 
-bool Graph::containsNode(const sp_Node& node) const { return !(nodes.find(node->label) == nodes.end()); }
+bool GraphWheight::containsNode(const sp_Node& node) const { return !(nodes.find(node->label) == nodes.end()); }
 
 
 
-void Graph::addNode(char label)
+void GraphWheight::addNode(char label)
 {
     auto newNode = make_shared<Node>(label);
     nodes.insert({label, newNode});
 }
 
 
-void Graph::addEdge(char from, char to, int weight) const
+void GraphWheight::addEdge(char from, char to, int weight) const
 { // relationship
     if (nodes.find(from) == nodes.end() || nodes.find(to) == nodes.end()) throw exception();
     auto fromNode = nodes.find(from)->second;
@@ -54,7 +54,7 @@ void Graph::addEdge(char from, char to, int weight) const
     toNode->addEdge(fromNode, weight);
 }
 
-list<char> Graph::getShortestPath(char from, char to) const
+list<char> GraphWheight::getShortestPath(char from, char to) const
 {
     if (nodes.find(from) == nodes.end() || nodes.find(to) == nodes.end()) throw exception();
     auto fromNode = nodes.find(from)->second;
@@ -87,7 +87,7 @@ list<char> Graph::getShortestPath(char from, char to) const
     return buildPath(previousNodes, toNode);
 }
 
-bool Graph::hasCycle()
+bool GraphWheight::hasCycle()
 {   // !!! Review
     set<sp_Node> visited{};
     for(auto& node : nodes)
@@ -96,11 +96,11 @@ bool Graph::hasCycle()
     return false;
 }
 
-bool Graph::containsNode(char label) { return nodes.find(label) != nodes.end(); }
+bool GraphWheight::containsNode(char label) { return nodes.find(label) != nodes.end(); }
 
-Graph Graph::getMinimumSpanningTree() //to check
+GraphWheight GraphWheight::getMinimumSpanningTree() //to check
 {
-    Graph tree{};
+    GraphWheight tree{};
     if (nodes.empty()) return tree;
     priority_queue<sp_Edge> edges{};
     auto startNode = nodes.begin()->second; //java: nodes.values().iterator().next();
@@ -121,7 +121,7 @@ Graph Graph::getMinimumSpanningTree() //to check
     return tree;
 }
 
-string Graph::print() const
+string GraphWheight::print() const
 {
     string str{};
     for (auto& node: nodes) {

@@ -5,9 +5,9 @@
 using  std::cout, std::boolalpha, std::endl;
 int main() {
 
-    cout << "Graph\n";   //retrieval
+    cout << "GraphWheight\n";   //retrieval
         //all other methods not tested
-    Graph graph{};
+    GraphWheight graph{};
     graph.addNode('a');
     graph.addNode('b');
     graph.addNode('c');

@@ -11,7 +11,7 @@
 using std::string, std::to_string, std::cout, std::map, std::pair, std::set;
 using std::stack, std::queue, std::list, std::shared_ptr, std::make_shared, std::exception;
 
-class Graph {   //for example only
+class GraphWheight {   //for example only
     struct Node {
      char label;
      explicit Node(char& label) : label{label} {   }
@@ -62,8 +62,8 @@ class Graph {   //for example only
         return false;
     }
 public:
-    explicit Graph() : nodes{}, edges{} {}
-    ~Graph() = default;
+    explicit GraphWheight() : nodes{}, edges{} {}
+    ~GraphWheight() = default;
     void addNode(char label)
     {
         auto newNode= make_shared<Node>(label);
