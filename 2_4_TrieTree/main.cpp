@@ -5,7 +5,7 @@
 
 #include "Trie.h"
 
-//#include "TrieC.c"    // fix c implementation
+#include "TrieC.cpp"    // fix c implementation
 
 
 using  std::cout, std::endl;
@@ -28,7 +28,7 @@ int main() {
     }
 
 
-/*
+
     //fix c implementation
     printf ( "\n\n" ) ;
     printf ( "Trie TreeAvl C:\n" ) ;
@@ -39,7 +39,7 @@ int main() {
     insert(&root, "KIR" ) ;
     insert(&root, "KIAR" ) ;
     print(root);
-*/
+
 
     return EXIT_SUCCESS;
 }
