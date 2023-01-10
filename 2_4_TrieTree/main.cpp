@@ -3,8 +3,11 @@
 #include <iostream>
 
 
-#include "Trie.cpp"
-#include "TrieC.c"    // fix c implementation
+#include "Trie.h"
+
+//#include "TrieC.c"    // fix c implementation
+
+
 using  std::cout, std::endl;
 int main() {
 
@@ -25,17 +28,18 @@ int main() {
     }
 
 
-     //fix c implementation
-    printf("\n\n");
-    printf("Trie TreeAvl C:\n");
+/*
+    //fix c implementation
+    printf ( "\n\n" ) ;
+    printf ( "Trie TreeAvl C:\n" ) ;
     struct node *root = NULL;
-    insert(&root, "KIT");
-    insert(&root, "KITTTE");
-    insert(&root, "CATTLE");
-    insert(&root, "KIR");
-    insert(&root, "KIAR");
+    insert(&root, "KIT" ) ;
+    insert(&root, "KITTTE" ) ;
+    insert(&root, "CATTLE" ) ;
+    insert(&root, "KIR" ) ;
+    insert(&root, "KIAR" ) ;
     print(root);
-
+*/
 
     return EXIT_SUCCESS;
 }

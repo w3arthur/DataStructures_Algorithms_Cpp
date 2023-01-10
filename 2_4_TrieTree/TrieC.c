@@ -1,4 +1,3 @@
-#pragma once
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
@@ -13,10 +12,9 @@ struct node
     struct node* nodeWords[NUM_CHAR];
 };
 
-
 struct node* createNode()
 {
-    struct node *newNode = (node*) malloc(sizeof *newNode);
+    struct node *newNode = malloc(sizeof *newNode);
     for (int i = 0; i < NUM_CHAR; ++i) newNode->nodeWords[i] = NULL;
     newNode->terminal = false;
     return newNode;

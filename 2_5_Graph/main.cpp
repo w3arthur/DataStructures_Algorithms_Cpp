@@ -1,13 +1,13 @@
 //fix the issue with too much destructures
 
-#include <iostream>
-#include "Graph.cpp"
+
+#include "Graph.h"  //#include <iostream>
 using  std::cout, std::boolalpha, std::endl;
 int main() {
 
     cout << "GraphWheight\n";   //retrieval
         //all other methods not tested
-    GraphWheight graph{};
+    Graph graph{};
     graph.addNode('a');
     graph.addNode('b');
     graph.addNode('c');
@@ -21,10 +21,6 @@ int main() {
     graph.addEdge('a', 'd');
   //  graph.addEdge('c', 'a');
     cout << boolalpha << graph.hasCycle() << "\n";
-
-
-    graph.ge
-
 
 
 
