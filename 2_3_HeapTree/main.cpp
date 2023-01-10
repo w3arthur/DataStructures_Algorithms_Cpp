@@ -2,8 +2,8 @@
 //FIX Heap 2 vector fo Visual Studio
 #include <iostream>
 #include <list>
-#include "Heap.cpp"
-#include "HeapVector.cpp"
+#include "Heap.h"
+#include "HeapVector.h"
 using  std::cout, std::endl;
 int main() {
     cout << "HeapTree (please fix!!!)1212" << endl;

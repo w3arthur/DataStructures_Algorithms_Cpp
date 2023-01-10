@@ -1,4 +1,3 @@
-#pragma once
 #include "Graph.h"
 
 list<char> GraphWheight::buildPath(map<sp_Node, sp_Node>& previousNodes, const sp_Node& toNode) {
