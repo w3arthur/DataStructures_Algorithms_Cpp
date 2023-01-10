@@ -22,9 +22,9 @@ void HeapVector::shiftDown(int i) {
     shiftDown(swapId);
 }
 
-bool HeapVector::hasLeftChild(int &i) const { return left(i) < _size; }
+bool HeapVector::hasLeftChild(int i) const { return left(i) < _size; }
 
-bool HeapVector::hasRightChild(int &i) const { return right(i) < _size; }
+bool HeapVector::hasRightChild(int i) const { return right(i) < _size; }
 
 int HeapVector::largerChildIndex(int i) const {
     if (hasLeftChild(i) && hasRightChild(i))
@@ -36,7 +36,7 @@ int HeapVector::largerChildIndex(int i) const {
     else return i;
 }
 
-bool HeapVector::isValidParent(int &i) const {
+bool HeapVector::isValidParent(int i) const {
     auto isValidLeft = hasLeftChild(i) && vector[i] >= vector[left(i)];
     auto isValidRight = hasRightChild(i) && vector[i] >= vector[right(i)];
     if (hasLeftChild(i) && hasRightChild(i)) return isValidLeft && isValidRight;

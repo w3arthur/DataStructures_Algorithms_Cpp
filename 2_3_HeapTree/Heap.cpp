@@ -1,12 +1,12 @@
 #include "Heap.h"
 
-int Heap::parent(int &index) { return index / 2; }
+int Heap::parent(int index) { return index / 2; }
 
-int Heap::child(int &index) { return index * 2; }
+int Heap::child(int index) { return index * 2; }
 
-int Heap::left(int &index) { return  child(index) + 1; }
+int Heap::left(int index) { return  child(index) + 1; }
 
-int Heap::right(int &index) { return  child(index) + 2; }
+int Heap::right(int index) { return  child(index) + 2; }
 
 void Heap::bubbleUp() const {
     auto index = count - 1; //last
@@ -27,11 +27,11 @@ void Heap::bubbleDown() {
     }
 }
 
-bool Heap::hasLeftChild(int &i) const { return left(i) <= count; }
+bool Heap::hasLeftChild(int i) const { return left(i) <= count; }
 
-bool Heap::hasRightChild(int &i) const { return right(i) <= count; }
+bool Heap::hasRightChild(int i) const { return right(i) <= count; }
 
-int Heap::largerChildIndex(int &index) const {
+int Heap::largerChildIndex(int index) const {
     if (hasLeftChild(index) && hasRightChild(index))
     {
         if (itemArray[left(index)] > itemArray[right(index)]) return left(index);
@@ -41,7 +41,7 @@ int Heap::largerChildIndex(int &index) const {
     else return index;
 }
 
-bool Heap::isValidParent(int &index) const {
+bool Heap::isValidParent(int index) const {
     auto isValidLeft = itemArray[index] >= itemArray[left(index)];
     auto isValidRight = itemArray[index] >= itemArray[right(index)];
     if (hasLeftChild(index) && hasRightChild(index)) return isValidLeft && isValidRight;
@@ -53,7 +53,7 @@ bool Heap::isFull() const { return count == arrayLength; }
 
 bool Heap::isEmpty() const { return count == 0; }
 
-void Heap::insert(const int data) {
+void Heap::insert(int data) {
     if (isFull()) throw exception(); //or extend
     itemArray[count] = data;
     count++;

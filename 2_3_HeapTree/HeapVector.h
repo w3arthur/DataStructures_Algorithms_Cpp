@@ -12,10 +12,10 @@ class HeapVector {
     int right(int& i) const; // index*2+2
     void shiftDown(int i);
     void shiftUp(int i);
-    bool hasLeftChild(int& i) const;
-    bool hasRightChild(int& i) const;
+    bool hasLeftChild(int i) const;
+    bool hasRightChild(int i) const;
     [[nodiscard]] int largerChildIndex(int i) const;
-    bool isValidParent(int& i) const;
+    bool isValidParent(int i) const;
 
 public:
     explicit HeapVector() : vector{}, _size{} {}  //set to NULL

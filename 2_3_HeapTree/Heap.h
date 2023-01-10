@@ -12,27 +12,27 @@ class Heap {
     int count;
     int* itemArray;
     int arrayLength;
-    static int parent(int& index); // index/2
-    static int child(int& index); // index*2
-    static int left(int& index); // index*2+1
-    static int right(int& index); // index*2+2
+    static int parent(int index); // index/2
+    static int child(int index); // index*2
+    static int left(int index); // index*2+1
+    static int right(int index); // index*2+2
     void bubbleUp() const;
 
     void bubbleDown();  // לחזור!
 
-    bool hasLeftChild(int& i) const;
-    bool hasRightChild(int& i) const;
+    bool hasLeftChild(int i) const;
+    bool hasRightChild(int i) const;
 
-    int largerChildIndex(int& index) const;
+    int largerChildIndex(int index) const;
 
-    bool isValidParent(int& index) const;
+    bool isValidParent(int index) const;
 
 public:
     explicit Heap() : arrayLength{ 20 }, itemArray{ new int[20] }, count{} {}
     ~Heap() { delete[](itemArray); }
-    bool isFull() const;
-    bool isEmpty() const;
-    void insert(const int data);
+    [[nodiscard]] bool isFull() const;
+    [[nodiscard]] bool isEmpty() const;
+    void insert(int data);
     [[nodiscard]] int max() const;
     int remove(); //remove top
 

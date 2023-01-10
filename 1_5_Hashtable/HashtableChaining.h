@@ -7,7 +7,7 @@ using std::pair, std::list, std::to_string, std::begin, std::end, std::cout, std
 
 class HashtableChaining
 {
-    static const int HASHTABLE_LENGTH = 10;
+    static const int HASHTABLE_LENGTH { 10 };
     //list<pair<int, string>>* hashtable;
     list<struct Pair>* hashtable;
 
