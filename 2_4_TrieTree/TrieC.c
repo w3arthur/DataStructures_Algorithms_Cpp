@@ -1,3 +1,7 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
@@ -52,3 +56,6 @@ void print(struct node* root){
 
 
 
+#ifdef __cplusplus
+}; //extern "C"
+#endif
