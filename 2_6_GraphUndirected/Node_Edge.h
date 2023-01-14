@@ -34,7 +34,7 @@ struct Edge {
     int weight;
     ptr_Node from;
     wp_Node to;
-    explicit Edge(Node* from, sp_Node& to, int weight) : from{from}, to{to}, weight{weight} {   }
+    explicit Edge(ptr_Node from, sp_Node& to, int weight) : from{from}, to{to}, weight{weight} {   }
     ~Edge(){ cout << "del:" << print() << "; "; }
     [[nodiscard]] sp_Node getTo() const { return sp_Node(to); }
     //   /*!*/ bool operator<(const struct Edge &other) const { return this->weight > other.weight; } /*!*/
